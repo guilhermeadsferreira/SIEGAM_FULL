@@ -1,0 +1,2713 @@
+{
+  "Região Metropolitana de Goiânia": {
+    "temperatura baixa": {
+      "value": 16.55000000000001,
+      "value_k": 289.7,
+      "threshold": 20.3,
+      "difference": -3.7499999999999893,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 115200.0,
+      "polygon_name": "5730-RMG-Regiao_Metropolitana_de_Goiania",
+      "unit": "°C"
+    },
+    "umidade baixa": {
+      "value": 45.23846538681341,
+      "threshold": 60,
+      "difference": -14.76153461318659,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "5730-RMG-Regiao_Metropolitana_de_Goiania",
+      "unit": "%",
+      "tave": 30.350000000000023,
+      "tdave": 17.150000000000034
+    }
+  },
+  "Jataí": {
+    "temperatura alta": {
+      "value": 35.05000000000001,
+      "value_k": 308.2,
+      "threshold": 31.2,
+      "difference": 3.850000000000012,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "2755-Jatai",
+      "unit": "°C"
+    },
+    "temperatura baixa": {
+      "value": 16.25,
+      "value_k": 289.4,
+      "threshold": 19.8,
+      "difference": -3.5500000000000007,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 117000.0,
+      "polygon_name": "2755-Jatai",
+      "unit": "°C"
+    },
+    "umidade baixa": {
+      "value": 30.828120092735293,
+      "threshold": 60,
+      "difference": -29.171879907264707,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "2755-Jatai",
+      "unit": "%",
+      "tave": 33.05000000000001,
+      "tdave": 13.550000000000011
+    }
+  },
+  "Ipameri": {
+    "temperatura alta": {
+      "value": 34.35000000000002,
+      "value_k": 307.5,
+      "threshold": 29.9,
+      "difference": 4.450000000000024,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "2428-Ipameri",
+      "unit": "°C"
+    },
+    "temperatura baixa": {
+      "value": 14.550000000000011,
+      "value_k": 287.7,
+      "threshold": 19.9,
+      "difference": -5.349999999999987,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 117000.0,
+      "polygon_name": "2428-Ipameri",
+      "unit": "°C"
+    },
+    "umidade baixa": {
+      "value": 34.82022586395511,
+      "threshold": 60,
+      "difference": -25.17977413604489,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "2428-Ipameri",
+      "unit": "%",
+      "tave": 31.350000000000023,
+      "tdave": 13.950000000000045
+    }
+  },
+  "Formosa": {
+    "temperatura baixa": {
+      "value": 15.25,
+      "value_k": 288.4,
+      "threshold": 19.2,
+      "difference": -3.9499999999999993,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 117000.0,
+      "polygon_name": "2036-Formosa",
+      "unit": "°C"
+    }
+  },
+  "Rio Verde": {
+    "temperatura baixa": {
+      "value": 15.550000000000011,
+      "value_k": 288.7,
+      "threshold": 19.8,
+      "difference": -4.249999999999989,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 117000.0,
+      "polygon_name": "4420-Rio_Verde",
+      "unit": "°C"
+    },
+    "umidade baixa": {
+      "value": 33.770475602221644,
+      "threshold": 60,
+      "difference": -26.229524397778356,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "4420-Rio_Verde",
+      "unit": "%",
+      "tave": 32.35000000000002,
+      "tdave": 14.350000000000023
+    }
+  },
+  "Catalão": {
+    "temperatura alta": {
+      "value": 36.25,
+      "value_k": 309.4,
+      "threshold": 29.6,
+      "difference": 6.649999999999999,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "1406-Catalao",
+      "unit": "°C"
+    },
+    "temperatura baixa": {
+      "value": 14.550000000000011,
+      "value_k": 287.7,
+      "threshold": 19.7,
+      "difference": -5.149999999999988,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 117000.0,
+      "polygon_name": "1406-Catalao",
+      "unit": "°C"
+    },
+    "umidade baixa": {
+      "value": 32.65440238935046,
+      "threshold": 60,
+      "difference": -27.34559761064954,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "1406-Catalao",
+      "unit": "%",
+      "tave": 31.450000000000045,
+      "tdave": 13.050000000000011
+    }
+  },
+  "Rio Verde Região Norte": {
+    "umidade baixa": {
+      "value": 34.09677193043556,
+      "threshold": 60,
+      "difference": -25.90322806956444,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "5727-RN_Rio_Verde",
+      "unit": "%",
+      "tave": 31.950000000000045,
+      "tdave": 14.150000000000034
+    }
+  },
+  "Rio Verde Região Leste": {
+    "umidade baixa": {
+      "value": 34.29375325101973,
+      "threshold": 60,
+      "difference": -25.70624674898027,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "5728-RL_Rio_Verde",
+      "unit": "%",
+      "tave": 32.650000000000034,
+      "tdave": 14.850000000000023
+    }
+  },
+  "Rio Verde Região Sul": {
+    "umidade baixa": {
+      "value": 32.77889557135876,
+      "threshold": 60,
+      "difference": -27.22110442864124,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "5729-RS_Rio_Verde",
+      "unit": "%",
+      "tave": 32.650000000000034,
+      "tdave": 14.150000000000034
+    }
+  },
+  "Campo Limpo de Goiás": {
+    "umidade baixa": {
+      "value": 53.51059722958878,
+      "threshold": 60,
+      "difference": -6.489402770411218,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "5773-Campo_Limpo_de_Goias",
+      "unit": "%",
+      "tave": 28.850000000000023,
+      "tdave": 18.450000000000045
+    }
+  },
+  "Cachoeira de Goiás": {
+    "umidade baixa": {
+      "value": 42.29280517564409,
+      "threshold": 60,
+      "difference": -17.70719482435591,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "1073-Cachoeira_de_Goias",
+      "unit": "%",
+      "tave": 32.650000000000034,
+      "tdave": 18.150000000000034
+    }
+  },
+  "Uirapuru": {
+    "umidade baixa": {
+      "value": 47.523682075093845,
+      "threshold": 60,
+      "difference": -12.476317924906155,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "5524-Uirapuru",
+      "unit": "%",
+      "tave": 33.450000000000045,
+      "tdave": 20.75
+    }
+  },
+  "Várjão": {
+    "umidade baixa": {
+      "value": 36.01547695556287,
+      "threshold": 60,
+      "difference": -23.984523044437132,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "5600-Varjao",
+      "unit": "%",
+      "tave": 32.35000000000002,
+      "tdave": 15.350000000000023
+    }
+  },
+  "Turvelândia": {
+    "umidade baixa": {
+      "value": 34.40611043459233,
+      "threshold": 60,
+      "difference": -25.59388956540767,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "5500-Turvelandia",
+      "unit": "%",
+      "tave": 33.05000000000001,
+      "tdave": 15.25
+    }
+  },
+  "Turvânia": {
+    "umidade baixa": {
+      "value": 45.39171769748249,
+      "threshold": 60,
+      "difference": -14.608282302517509,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "5499-Turvania",
+      "unit": "%",
+      "tave": 31.950000000000045,
+      "tdave": 18.650000000000034
+    }
+  },
+  "Trombas": {
+    "umidade baixa": {
+      "value": 56.417659519967565,
+      "threshold": 60,
+      "difference": -3.5823404800324354,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "5465-Trombas",
+      "unit": "%",
+      "tave": 30.950000000000045,
+      "tdave": 21.25
+    }
+  },
+  "Taquaral de Goiás": {
+    "umidade baixa": {
+      "value": 54.864514407259925,
+      "threshold": 60,
+      "difference": -5.135485592740075,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 59400.0,
+      "polygon_name": "5329-Taquaral_de_Goias",
+      "unit": "%",
+      "tave": 28.850000000000023,
+      "tdave": 18.850000000000023
+    }
+  },
+  "Valparaíso de Goiás": {
+    "umidade baixa": {
+      "value": 47.908600951674806,
+      "threshold": 60,
+      "difference": -12.091399048325194,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "5586-Valparaiso_de_Goias",
+      "unit": "%",
+      "tave": 29.350000000000023,
+      "tdave": 17.150000000000034
+    }
+  },
+  "Urutaí": {
+    "umidade baixa": {
+      "value": 33.008939205334336,
+      "threshold": 60,
+      "difference": -26.991060794665664,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "5571-Urutai",
+      "unit": "%",
+      "tave": 31.950000000000045,
+      "tdave": 13.650000000000034
+    }
+  },
+  "Silvânia": {
+    "umidade baixa": {
+      "value": 47.77322737233279,
+      "threshold": 60,
+      "difference": -12.22677262766721,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "5209-Silvania",
+      "unit": "%",
+      "tave": 28.850000000000023,
+      "tdave": 16.650000000000034
+    }
+  },
+  "Trindade": {
+    "umidade baixa": {
+      "value": 44.04960012433258,
+      "threshold": 60,
+      "difference": -15.950399875667422,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "5458-Trindade",
+      "unit": "%",
+      "tave": 31.150000000000034,
+      "tdave": 17.450000000000045
+    }
+  },
+  "Serranópolis": {
+    "umidade baixa": {
+      "value": 28.036935633279896,
+      "threshold": 60,
+      "difference": -31.963064366720104,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "5179-Serranopolis",
+      "unit": "%",
+      "tave": 34.05000000000001,
+      "tdave": 12.950000000000045
+    }
+  },
+  "São Miguel do Passa Quatro": {
+    "umidade baixa": {
+      "value": 40.31289680832295,
+      "threshold": 60,
+      "difference": -19.687103191677053,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "5011-Sao_Miguel_do_Passa_Quatro",
+      "unit": "%",
+      "tave": 30.25,
+      "tdave": 15.25
+    }
+  },
+  "São Miguel do Araguaia": {
+    "umidade baixa": {
+      "value": 50.1121702063524,
+      "threshold": 60,
+      "difference": -9.887829793647597,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "5006-Sao_Miguel_do_Araguaia",
+      "unit": "%",
+      "tave": 33.05000000000001,
+      "tdave": 21.25
+    }
+  },
+  "Vianópolis": {
+    "umidade baixa": {
+      "value": 42.26145950808899,
+      "threshold": 60,
+      "difference": -17.73854049191101,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "5647-Vianopolis",
+      "unit": "%",
+      "tave": 29.650000000000034,
+      "tdave": 15.450000000000045
+    }
+  },
+  "São João da Paraúna": {
+    "umidade baixa": {
+      "value": 39.35280640230695,
+      "threshold": 60,
+      "difference": -20.647193597693047,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "4861-Sao_Joao_da_Parauna",
+      "unit": "%",
+      "tave": 33.150000000000034,
+      "tdave": 17.450000000000045
+    }
+  },
+  "Vicentinópolis": {
+    "umidade baixa": {
+      "value": 33.561043529631874,
+      "threshold": 60,
+      "difference": -26.438956470368126,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "5651-Vicentinopolis",
+      "unit": "%",
+      "tave": 33.150000000000034,
+      "tdave": 14.950000000000045
+    }
+  },
+  "São Francisco de Goiás": {
+    "umidade baixa": {
+      "value": 56.27304138344068,
+      "threshold": 60,
+      "difference": -3.7269586165593225,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "4812-Sao_Francisco_de_Goias",
+      "unit": "%",
+      "tave": 28.950000000000045,
+      "tdave": 19.350000000000023
+    }
+  },
+  "Santa Terezinha de Goiás": {
+    "umidade baixa": {
+      "value": 51.69937716342374,
+      "threshold": 60,
+      "difference": -8.30062283657626,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "4655-Santa_Terezinha_de_Goias",
+      "unit": "%",
+      "tave": 31.950000000000045,
+      "tdave": 20.75
+    }
+  },
+  "São Simão": {
+    "umidade baixa": {
+      "value": 33.28029062212071,
+      "threshold": 60,
+      "difference": -26.71970937787929,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "5071-Sao_Simao",
+      "unit": "%",
+      "tave": 32.150000000000034,
+      "tdave": 13.950000000000045
+    }
+  },
+  "Santa Rita do Araguaia": {
+    "umidade baixa": {
+      "value": 29.29277298700258,
+      "threshold": 60,
+      "difference": -30.70722701299742,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "4626-Santa_Rita_do_Araguaia",
+      "unit": "%",
+      "tave": 34.55000000000001,
+      "tdave": 14.050000000000011
+    }
+  },
+  "Santa Tereza de Goiás": {
+    "umidade baixa": {
+      "value": 56.07319594778107,
+      "threshold": 60,
+      "difference": -3.9268040522189267,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "4649-Santa_Tereza_de_Goias",
+      "unit": "%",
+      "tave": 30.950000000000045,
+      "tdave": 21.150000000000034
+    }
+  },
+  "São Luís de Montes Belos": {
+    "umidade baixa": {
+      "value": 49.92134020031035,
+      "threshold": 60,
+      "difference": -10.078659799689653,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "4977-Sao_Luis_de_Montes_Belos",
+      "unit": "%",
+      "tave": 31.150000000000034,
+      "tdave": 19.450000000000045
+    }
+  },
+  "Santa Helena de Goiás": {
+    "umidade baixa": {
+      "value": 33.91096599305294,
+      "threshold": 60,
+      "difference": -26.08903400694706,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "4571-Santa_Helena_de_Goias",
+      "unit": "%",
+      "tave": 32.85000000000002,
+      "tdave": 14.850000000000023
+    }
+  },
+  "Rio Quente": {
+    "umidade baixa": {
+      "value": 30.656029845982918,
+      "threshold": 60,
+      "difference": -29.343970154017082,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "4415-Rio_Quente",
+      "unit": "%",
+      "tave": 33.150000000000034,
+      "tdave": 13.550000000000011
+    }
+  },
+  "Quirinópolis": {
+    "umidade baixa": {
+      "value": 36.36717635863039,
+      "threshold": 60,
+      "difference": -23.632823641369612,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "4263-Quirinopolis",
+      "unit": "%",
+      "tave": 31.950000000000045,
+      "tdave": 15.150000000000034
+    }
+  },
+  "Porteirão": {
+    "umidade baixa": {
+      "value": 34.37803507368784,
+      "threshold": 60,
+      "difference": -25.62196492631216,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "4120-Porteirao",
+      "unit": "%",
+      "tave": 32.950000000000045,
+      "tdave": 15.150000000000034
+    }
+  },
+  "Porangatu": {
+    "umidade baixa": {
+      "value": 51.04130280189722,
+      "threshold": 60,
+      "difference": -8.958697198102783,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "4115-Porangatu",
+      "unit": "%",
+      "tave": 31.850000000000023,
+      "tdave": 20.450000000000045
+    },
+    "chuva": {
+      "value": 62.79,
+      "threshold": 15.0,
+      "difference": 47.79,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 84600.0,
+      "polygon_name": "4115-Porangatu",
+      "unit": "mm"
+    }
+  },
+  "Terezópolis de Goiás": {
+    "umidade baixa": {
+      "value": 50.676347167445,
+      "threshold": 60,
+      "difference": -9.323652832554998,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "5374-Terezopolis_de_Goias",
+      "unit": "%",
+      "tave": 29.25,
+      "tdave": 17.950000000000045
+    }
+  },
+  "Santa Fé de Goiás": {
+    "umidade baixa": {
+      "value": 51.27864437589729,
+      "threshold": 60,
+      "difference": -8.721355624102713,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "4559-Santa_Fe_de_Goias",
+      "unit": "%",
+      "tave": 31.55000000000001,
+      "tdave": 20.25
+    }
+  },
+  "Professor Jamil": {
+    "umidade baixa": {
+      "value": 33.07576489586435,
+      "threshold": 60,
+      "difference": -26.924235104135647,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "4224-Professor_Jamil",
+      "unit": "%",
+      "tave": 32.950000000000045,
+      "tdave": 14.550000000000011
+    }
+  },
+  "Pontalina": {
+    "umidade baixa": {
+      "value": 31.02280968199845,
+      "threshold": 60,
+      "difference": -28.97719031800155,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "4095-Pontalina",
+      "unit": "%",
+      "tave": 33.75,
+      "tdave": 14.25
+    }
+  },
+  "Sanclerlândia": {
+    "umidade baixa": {
+      "value": 55.40775151486489,
+      "threshold": 60,
+      "difference": -4.592248485135109,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 72000.0,
+      "polygon_name": "4511-Sanclerlandia",
+      "unit": "%",
+      "tave": 29.650000000000034,
+      "tdave": 19.75
+    }
+  },
+  "Senador Canedo": {
+    "umidade baixa": {
+      "value": 44.217844551831085,
+      "threshold": 60,
+      "difference": -15.782155448168915,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "5128-Senador_Canedo",
+      "unit": "%",
+      "tave": 30.75,
+      "tdave": 17.150000000000034
+    }
+  },
+  "Pires do Rio": {
+    "umidade baixa": {
+      "value": 35.10307142597129,
+      "threshold": 60,
+      "difference": -24.896928574028713,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "4038-Pires_do_Rio",
+      "unit": "%",
+      "tave": 31.55000000000001,
+      "tdave": 14.25
+    }
+  },
+  "Três Ranchos": {
+    "umidade baixa": {
+      "value": 32.09184568523837,
+      "threshold": 60,
+      "difference": -27.90815431476163,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "5452-Tres_Ranchos",
+      "unit": "%",
+      "tave": 32.450000000000045,
+      "tdave": 13.650000000000034
+    }
+  },
+  "Piranhas": {
+    "umidade baixa": {
+      "value": 40.21483070998822,
+      "threshold": 60,
+      "difference": -19.78516929001178,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "4023-Piranhas",
+      "unit": "%",
+      "tave": 33.55000000000001,
+      "tdave": 18.150000000000034
+    }
+  },
+  "Piracanjuba": {
+    "umidade baixa": {
+      "value": 34.40256827299943,
+      "threshold": 60,
+      "difference": -25.59743172700057,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "4007-Piracanjuba",
+      "unit": "%",
+      "tave": 32.25,
+      "tdave": 14.550000000000011
+    }
+  },
+  "Portelândia": {
+    "umidade baixa": {
+      "value": 30.939413132079498,
+      "threshold": 60,
+      "difference": -29.060586867920502,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "4124-Portelandia",
+      "unit": "%",
+      "tave": 33.450000000000045,
+      "tdave": 13.950000000000045
+    }
+  },
+  "Santo Antônio de Goiás": {
+    "umidade baixa": {
+      "value": 50.78172212043227,
+      "threshold": 60,
+      "difference": -9.21827787956773,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "4712-Santo_Antonio_de_Goias",
+      "unit": "%",
+      "tave": 29.650000000000034,
+      "tdave": 18.350000000000023
+    }
+  },
+  "Pilar de Goiás": {
+    "umidade baixa": {
+      "value": 59.273376848726066,
+      "threshold": 60,
+      "difference": -0.7266231512739338,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "3966-Pilar_de_Goias",
+      "unit": "%",
+      "tave": 29.55000000000001,
+      "tdave": 20.75
+    }
+  },
+  "Pirenópolis": {
+    "umidade baixa": {
+      "value": 57.900118778858655,
+      "threshold": 60,
+      "difference": -2.099881221141345,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "4037-Pirenopolis",
+      "unit": "%",
+      "tave": 28.350000000000023,
+      "tdave": 19.25
+    }
+  },
+  "Perolândia": {
+    "umidade baixa": {
+      "value": 32.37096348909823,
+      "threshold": 60,
+      "difference": -27.62903651090177,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "3938-Perolandia",
+      "unit": "%",
+      "tave": 31.950000000000045,
+      "tdave": 13.350000000000023
+    }
+  },
+  "Santo Antônio do Descoberto": {
+    "umidade baixa": {
+      "value": 55.30206733547782,
+      "threshold": 60,
+      "difference": -4.6979326645221775,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 59400.0,
+      "polygon_name": "4721-Santo_Antonio_do_Descoberto",
+      "unit": "%",
+      "tave": 27.850000000000023,
+      "tdave": 18.05000000000001
+    }
+  },
+  "Santo Antônio da Barra": {
+    "umidade baixa": {
+      "value": 32.34364441104166,
+      "threshold": 60,
+      "difference": -27.65635558895834,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "4708-Santo_Antonio_da_Barra",
+      "unit": "%",
+      "tave": 33.35000000000002,
+      "tdave": 14.550000000000011
+    }
+  },
+  "Paraúna": {
+    "umidade baixa": {
+      "value": 37.09001976197781,
+      "threshold": 60,
+      "difference": -22.909980238022193,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "3793-Parauna",
+      "unit": "%",
+      "tave": 32.85000000000002,
+      "tdave": 16.25
+    }
+  },
+  "Palmeiras de Goiás": {
+    "umidade baixa": {
+      "value": 39.90801993283937,
+      "threshold": 60,
+      "difference": -20.091980067160627,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "3730-Palmeiras_de_Goias",
+      "unit": "%",
+      "tave": 32.450000000000045,
+      "tdave": 17.05000000000001
+    }
+  },
+  "Palestina de Goiás": {
+    "umidade baixa": {
+      "value": 35.57943382117522,
+      "threshold": 60,
+      "difference": -24.420566178824778,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "3708-Palestina_de_Goias",
+      "unit": "%",
+      "tave": 34.05000000000001,
+      "tdave": 16.650000000000034
+    }
+  },
+  "Panamá": {
+    "umidade baixa": {
+      "value": 33.04773283671998,
+      "threshold": 60,
+      "difference": -26.95226716328002,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "3741-Panama",
+      "unit": "%",
+      "tave": 32.85000000000002,
+      "tdave": 14.450000000000045
+    }
+  },
+  "Ouvidor": {
+    "umidade baixa": {
+      "value": 26.943673803044256,
+      "threshold": 60,
+      "difference": -33.056326196955744,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "3682-Ouvidor",
+      "unit": "%",
+      "tave": 33.35000000000002,
+      "tdave": 11.75
+    }
+  },
+  "Ouro Verde de Goiás": {
+    "umidade baixa": {
+      "value": 55.10716879014529,
+      "threshold": 60,
+      "difference": -4.892831209854712,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "3677-Ouro_Verde_de_Goias",
+      "unit": "%",
+      "tave": 28.450000000000045,
+      "tdave": 18.55000000000001
+    }
+  },
+  "Orizona": {
+    "umidade baixa": {
+      "value": 39.82670275199904,
+      "threshold": 60,
+      "difference": -20.173297248000956,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "3649-Orizona",
+      "unit": "%",
+      "tave": 30.350000000000023,
+      "tdave": 15.150000000000034
+    }
+  },
+  "Novo Planalto": {
+    "umidade baixa": {
+      "value": 48.247534287733,
+      "threshold": 60,
+      "difference": -11.752465712267004,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "3606-Novo_Planalto",
+      "unit": "%",
+      "tave": 32.85000000000002,
+      "tdave": 20.450000000000045
+    }
+  },
+  "Nova Veneza": {
+    "umidade baixa": {
+      "value": 52.566223294018044,
+      "threshold": 60,
+      "difference": -7.4337767059819555,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "3577-Nova_Veneza",
+      "unit": "%",
+      "tave": 29.05000000000001,
+      "tdave": 18.350000000000023
+    }
+  },
+  "Nova Crixás": {
+    "umidade baixa": {
+      "value": 51.879893659164566,
+      "threshold": 60,
+      "difference": -8.120106340835434,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "3504-Nova_Crixas",
+      "unit": "%",
+      "tave": 32.650000000000034,
+      "tdave": 21.450000000000045
+    },
+    "chuva": {
+      "value": 18.21,
+      "threshold": 15.0,
+      "difference": 3.210000000000001,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 122400.0,
+      "polygon_name": "3504-Nova_Crixas",
+      "unit": "mm"
+    }
+  },
+  "Nova Aurora": {
+    "umidade baixa": {
+      "value": 25.858963988429355,
+      "threshold": 60,
+      "difference": -34.14103601157065,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "3487-Nova_Aurora",
+      "unit": "%",
+      "tave": 33.85000000000002,
+      "tdave": 11.550000000000011
+    }
+  },
+  "Nerópolis": {
+    "umidade baixa": {
+      "value": 52.566223294018044,
+      "threshold": 60,
+      "difference": -7.4337767059819555,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "3451-Neropolis",
+      "unit": "%",
+      "tave": 29.05000000000001,
+      "tdave": 18.350000000000023
+    }
+  },
+  "Nazário": {
+    "umidade baixa": {
+      "value": 42.6325231271005,
+      "threshold": 60,
+      "difference": -17.367476872899502,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "3448-Nazario",
+      "unit": "%",
+      "tave": 31.950000000000045,
+      "tdave": 17.650000000000034
+    }
+  },
+  "Mutunópolis": {
+    "umidade baixa": {
+      "value": 53.131390877527465,
+      "threshold": 60,
+      "difference": -6.8686091224725345,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "3425-Mutunopolis",
+      "unit": "%",
+      "tave": 31.25,
+      "tdave": 20.55000000000001
+    },
+    "chuva": {
+      "value": 34.4,
+      "threshold": 15.0,
+      "difference": 19.4,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 82800.0,
+      "polygon_name": "3425-Mutunopolis",
+      "unit": "mm"
+    }
+  },
+  "Mundo Novo": {
+    "umidade baixa": {
+      "value": 44.703795411832026,
+      "threshold": 60,
+      "difference": -15.296204588167974,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "3408-Mundo_Novo",
+      "unit": "%",
+      "tave": 34.55000000000001,
+      "tdave": 20.75
+    },
+    "chuva": {
+      "value": 18.21,
+      "threshold": 15.0,
+      "difference": 3.210000000000001,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 122400.0,
+      "polygon_name": "3408-Mundo_Novo",
+      "unit": "mm"
+    }
+  },
+  "Mozarlândia": {
+    "umidade baixa": {
+      "value": 58.02427012360598,
+      "threshold": 60,
+      "difference": -1.9757298763940199,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "3394-Mozarlandia",
+      "unit": "%",
+      "tave": 30.350000000000023,
+      "tdave": 21.150000000000034
+    }
+  },
+  "Morrinhos": {
+    "umidade baixa": {
+      "value": 31.084868470477538,
+      "threshold": 60,
+      "difference": -28.915131529522462,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "3373-Morrinhos",
+      "unit": "%",
+      "tave": 33.25,
+      "tdave": 13.850000000000023
+    }
+  },
+  "Montividiu do Norte": {
+    "umidade baixa": {
+      "value": 52.90749931184716,
+      "threshold": 60,
+      "difference": -7.092500688152839,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "3362-Montividiu_do_Norte",
+      "unit": "%",
+      "tave": 31.650000000000034,
+      "tdave": 20.850000000000023
+    }
+  },
+  "Montividiu": {
+    "umidade baixa": {
+      "value": 33.96117728997455,
+      "threshold": 60,
+      "difference": -26.03882271002545,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "3361-Montividiu",
+      "unit": "%",
+      "tave": 32.25,
+      "tdave": 14.350000000000023
+    }
+  },
+  "Montes Claros de Goiás": {
+    "umidade baixa": {
+      "value": 49.64851384041361,
+      "threshold": 60,
+      "difference": -10.351486159586393,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "3359-Montes_Claros_de_Goias",
+      "unit": "%",
+      "tave": 32.450000000000045,
+      "tdave": 20.55000000000001
+    }
+  },
+  "Mossâmedes": {
+    "umidade baixa": {
+      "value": 58.18879587283272,
+      "threshold": 60,
+      "difference": -1.8112041271672794,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 54000.0,
+      "polygon_name": "3390-Mossamedes",
+      "unit": "%",
+      "tave": 28.05000000000001,
+      "tdave": 19.05000000000001
+    }
+  },
+  "Santa Cruz de Goiás": {
+    "umidade baixa": {
+      "value": 34.82022586395511,
+      "threshold": 60,
+      "difference": -25.17977413604489,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "4545-Santa_Cruz_de_Goias",
+      "unit": "%",
+      "tave": 31.350000000000023,
+      "tdave": 13.950000000000045
+    }
+  },
+  "Moiçorá": {
+    "umidade baixa": {
+      "value": 49.0523390666349,
+      "threshold": 60,
+      "difference": -10.9476609333651,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "3304-Moipora",
+      "unit": "%",
+      "tave": 31.350000000000023,
+      "tdave": 19.350000000000023
+    }
+  },
+  "Maurilândia": {
+    "umidade baixa": {
+      "value": 35.413051068888485,
+      "threshold": 60,
+      "difference": -24.586948931111515,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "3224-Maurilandia",
+      "unit": "%",
+      "tave": 32.650000000000034,
+      "tdave": 15.350000000000023
+    }
+  },
+  "Matrinchã": {
+    "umidade baixa": {
+      "value": 55.34008039182277,
+      "threshold": 60,
+      "difference": -4.659919608177233,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "3216-Matrincha",
+      "unit": "%",
+      "tave": 30.75,
+      "tdave": 20.75
+    }
+  },
+  "Paranaiguara": {
+    "umidade baixa": {
+      "value": 35.67688539368717,
+      "threshold": 60,
+      "difference": -24.323114606312828,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "3777-Paranaiguara",
+      "unit": "%",
+      "tave": 31.150000000000034,
+      "tdave": 14.150000000000034
+    }
+  },
+  "Mara Rosa": {
+    "umidade baixa": {
+      "value": 55.63155253748724,
+      "threshold": 60,
+      "difference": -4.368447462512762,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "3105-Mara_Rosa",
+      "unit": "%",
+      "tave": 30.55000000000001,
+      "tdave": 20.650000000000034
+    }
+  },
+  "Mambaí": {
+    "umidade baixa": {
+      "value": 58.045036386748336,
+      "threshold": 60,
+      "difference": -1.954963613251664,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "3074-Mambai",
+      "unit": "%",
+      "tave": 28.950000000000045,
+      "tdave": 19.850000000000023
+    }
+  },
+  "Mairipotaba": {
+    "umidade baixa": {
+      "value": 32.44100985043335,
+      "threshold": 60,
+      "difference": -27.558990149566647,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "3061-Mairipotaba",
+      "unit": "%",
+      "tave": 32.950000000000045,
+      "tdave": 14.25
+    }
+  },
+  "Luziânia": {
+    "umidade baixa": {
+      "value": 50.73176371428932,
+      "threshold": 60,
+      "difference": -9.268236285710678,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "3022-Luziania",
+      "unit": "%",
+      "tave": 28.25,
+      "tdave": 17.05000000000001
+    }
+  },
+  "Lagoa Santa": {
+    "umidade baixa": {
+      "value": 27.094700631425674,
+      "threshold": 60,
+      "difference": -32.905299368574326,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "5776-Lagoa_Santa",
+      "unit": "%",
+      "tave": 33.25,
+      "tdave": 11.75
+    }
+  },
+  "Jussara": {
+    "umidade baixa": {
+      "value": 55.73057171554899,
+      "threshold": 60,
+      "difference": -4.26942828445101,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "2861-Jussara",
+      "unit": "%",
+      "tave": 30.950000000000045,
+      "tdave": 21.05000000000001
+    }
+  },
+  "Marzagão": {
+    "umidade baixa": {
+      "value": 29.535495431679475,
+      "threshold": 60,
+      "difference": -30.464504568320525,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "3181-Marzagao",
+      "unit": "%",
+      "tave": 33.35000000000002,
+      "tdave": 13.150000000000034
+    }
+  },
+  "Jandaia": {
+    "umidade baixa": {
+      "value": 35.781216855484615,
+      "threshold": 60,
+      "difference": -24.218783144515385,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "2716-Jandaia",
+      "unit": "%",
+      "tave": 33.150000000000034,
+      "tdave": 15.950000000000045
+    }
+  },
+  "Ivolândia": {
+    "umidade baixa": {
+      "value": 40.13130428562351,
+      "threshold": 60,
+      "difference": -19.868695714376493,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "2664-Ivolandia",
+      "unit": "%",
+      "tave": 33.25,
+      "tdave": 17.850000000000023
+    }
+  },
+  "Jaraguá": {
+    "umidade baixa": {
+      "value": 59.08405715010938,
+      "threshold": 60,
+      "difference": -0.9159428498906195,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "2738-Jaragua",
+      "unit": "%",
+      "tave": 28.75,
+      "tdave": 19.950000000000045
+    }
+  },
+  "Itumbiara": {
+    "umidade baixa": {
+      "value": 33.93303510828287,
+      "threshold": 60,
+      "difference": -26.066964891717127,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "2649-Itumbiara",
+      "unit": "%",
+      "tave": 32.150000000000034,
+      "tdave": 14.25
+    }
+  },
+  "Itauçu": {
+    "umidade baixa": {
+      "value": 52.92203604265025,
+      "threshold": 60,
+      "difference": -7.077963957349752,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 59400.0,
+      "polygon_name": "2630-Itaucu",
+      "unit": "%",
+      "tave": 29.150000000000034,
+      "tdave": 18.55000000000001
+    }
+  },
+  "Itarumã": {
+    "umidade baixa": {
+      "value": 30.373856002830795,
+      "threshold": 60,
+      "difference": -29.626143997169205,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "2617-Itaruma",
+      "unit": "%",
+      "tave": 32.85000000000002,
+      "tdave": 13.150000000000034
+    }
+  },
+  "Jaupaci": {
+    "umidade baixa": {
+      "value": 53.0548032742834,
+      "threshold": 60,
+      "difference": -6.945196725716599,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "2765-Jaupaci",
+      "unit": "%",
+      "tave": 30.950000000000045,
+      "tdave": 20.25
+    }
+  },
+  "Petrolina de Goiás": {
+    "umidade baixa": {
+      "value": 55.82488668403081,
+      "threshold": 60,
+      "difference": -4.175113315969192,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "3945-Petrolina_de_Goias",
+      "unit": "%",
+      "tave": 28.55000000000001,
+      "tdave": 18.850000000000023
+    },
+    "chuva": {
+      "value": 16.75,
+      "threshold": 15.0,
+      "difference": 1.75,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 126000.0,
+      "polygon_name": "3945-Petrolina_de_Goias",
+      "unit": "mm"
+    }
+  },
+  "Itapuranga": {
+    "umidade baixa": {
+      "value": 59.497574894956415,
+      "threshold": 60,
+      "difference": -0.5024251050435851,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "2606-Itapuranga",
+      "unit": "%",
+      "tave": 28.950000000000045,
+      "tdave": 20.25
+    }
+  },
+  "Itapirapuã": {
+    "umidade baixa": {
+      "value": 55.26540451069215,
+      "threshold": 60,
+      "difference": -4.73459548930785,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 59400.0,
+      "polygon_name": "2589-Itapirapua",
+      "unit": "%",
+      "tave": 30.450000000000045,
+      "tdave": 20.450000000000045
+    }
+  },
+  "Itajá": {
+    "umidade baixa": {
+      "value": 28.289142373899402,
+      "threshold": 60,
+      "difference": -31.710857626100598,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "2534-Itaja",
+      "unit": "%",
+      "tave": 32.950000000000045,
+      "tdave": 12.150000000000034
+    }
+  },
+  "Leopoldo de Bulhões": {
+    "umidade baixa": {
+      "value": 49.363643909476586,
+      "threshold": 60,
+      "difference": -10.636356090523414,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "2966-Leopoldo_de_Bulhoes",
+      "unit": "%",
+      "tave": 29.05000000000001,
+      "tdave": 17.350000000000023
+    }
+  },
+  "Joviânia": {
+    "umidade baixa": {
+      "value": 31.223999520058733,
+      "threshold": 60,
+      "difference": -28.776000479941267,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "2819-Joviania",
+      "unit": "%",
+      "tave": 33.75,
+      "tdave": 14.350000000000023
+    }
+  },
+  "Itaguari": {
+    "umidade baixa": {
+      "value": 53.381899654789834,
+      "threshold": 60,
+      "difference": -6.618100345210166,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "2520-Itaguari",
+      "unit": "%",
+      "tave": 29.650000000000034,
+      "tdave": 19.150000000000034
+    }
+  },
+  "Itaberaí": {
+    "umidade baixa": {
+      "value": 54.260004369391964,
+      "threshold": 60,
+      "difference": -5.7399956306080355,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 59400.0,
+      "polygon_name": "2497-Itaberai",
+      "unit": "%",
+      "tave": 29.150000000000034,
+      "tdave": 18.950000000000045
+    }
+  },
+  "Israelândia": {
+    "umidade baixa": {
+      "value": 52.377928766649774,
+      "threshold": 60,
+      "difference": -7.622071233350226,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "2488-Israelandia",
+      "unit": "%",
+      "tave": 30.850000000000023,
+      "tdave": 19.950000000000045
+    }
+  },
+  "Jesúpolis": {
+    "umidade baixa": {
+      "value": 54.64955185971058,
+      "threshold": 60,
+      "difference": -5.350448140289423,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "2782-Jesupolis",
+      "unit": "%",
+      "tave": 29.350000000000023,
+      "tdave": 19.25
+    }
+  },
+  "Indiara": {
+    "umidade baixa": {
+      "value": 34.40611043459233,
+      "threshold": 60,
+      "difference": -25.59388956540767,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "2409-Indiara",
+      "unit": "%",
+      "tave": 33.05000000000001,
+      "tdave": 15.25
+    }
+  },
+  "Inaciolândia": {
+    "umidade baixa": {
+      "value": 37.05785451020013,
+      "threshold": 60,
+      "difference": -22.94214548979987,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "2396-Inaciolandia",
+      "unit": "%",
+      "tave": 31.05000000000001,
+      "tdave": 14.650000000000034
+    }
+  },
+  "Novo Brasil": {
+    "umidade baixa": {
+      "value": 56.122522989455945,
+      "threshold": 60,
+      "difference": -3.8774770105440552,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "3587-Novo_Brasil",
+      "unit": "%",
+      "tave": 29.75,
+      "tdave": 20.05000000000001
+    }
+  },
+  "Iporá": {
+    "umidade baixa": {
+      "value": 44.46179144560193,
+      "threshold": 60,
+      "difference": -15.538208554398068,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "2450-Ipora",
+      "unit": "%",
+      "tave": 32.650000000000034,
+      "tdave": 18.950000000000045
+    }
+  },
+  "Hidrolândia": {
+    "umidade baixa": {
+      "value": 39.04090455643424,
+      "threshold": 60,
+      "difference": -20.959095443565758,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "2272-Hidrolandia",
+      "unit": "%",
+      "tave": 31.150000000000034,
+      "tdave": 15.550000000000011
+    }
+  },
+  "Guapó": {
+    "umidade baixa": {
+      "value": 40.420124620796166,
+      "threshold": 60,
+      "difference": -19.579875379203834,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "2207-Guapo",
+      "unit": "%",
+      "tave": 31.55000000000001,
+      "tdave": 16.450000000000045
+    }
+  },
+  "Gouvelândia": {
+    "umidade baixa": {
+      "value": 38.515731668194015,
+      "threshold": 60,
+      "difference": -21.484268331805985,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "2153-Gouvelandia",
+      "unit": "%",
+      "tave": 31.05000000000001,
+      "tdave": 15.25
+    }
+  },
+  "Goiatuba": {
+    "umidade baixa": {
+      "value": 33.448846897219745,
+      "threshold": 60,
+      "difference": -26.551153102780255,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "2145-Goiatuba",
+      "unit": "%",
+      "tave": 32.75,
+      "tdave": 14.550000000000011
+    }
+  },
+  "Palminópolis": {
+    "umidade baixa": {
+      "value": 39.57371674843447,
+      "threshold": 60,
+      "difference": -20.42628325156553,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "3734-Palminopolis",
+      "unit": "%",
+      "tave": 33.05000000000001,
+      "tdave": 17.450000000000045
+    }
+  },
+  "Goiás": {
+    "umidade baixa": {
+      "value": 56.122522989455945,
+      "threshold": 60,
+      "difference": -3.8774770105440552,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "2143-Goias",
+      "unit": "%",
+      "tave": 29.75,
+      "tdave": 20.05000000000001
+    }
+  },
+  "Guarinos": {
+    "umidade baixa": {
+      "value": 57.573143077173725,
+      "threshold": 60,
+      "difference": -2.426856922826275,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 57600.0,
+      "polygon_name": "2244-Guarinos",
+      "unit": "%",
+      "tave": 29.950000000000045,
+      "tdave": 20.650000000000034
+    }
+  },
+  "Palmelo": {
+    "umidade baixa": {
+      "value": 35.361762338099894,
+      "threshold": 60,
+      "difference": -24.638237661900106,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "3733-Palmelo",
+      "unit": "%",
+      "tave": 30.850000000000023,
+      "tdave": 13.75
+    }
+  },
+  "Firminópolis": {
+    "umidade baixa": {
+      "value": 43.12264062472839,
+      "threshold": 60,
+      "difference": -16.87735937527161,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "2008-Firminopolis",
+      "unit": "%",
+      "tave": 32.75,
+      "tdave": 18.55000000000001
+    }
+  },
+  "Fazenda Nova": {
+    "umidade baixa": {
+      "value": 54.90085208285005,
+      "threshold": 60,
+      "difference": -5.099147917149949,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "1971-Fazenda_Nova",
+      "unit": "%",
+      "tave": 30.350000000000023,
+      "tdave": 20.25
+    }
+  },
+  "Goiânia": {
+    "umidade baixa": {
+      "value": 43.46945614184815,
+      "threshold": 60,
+      "difference": -16.53054385815185,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "0230-Goiania",
+      "unit": "%",
+      "tave": 31.05000000000001,
+      "tdave": 17.150000000000034
+    }
+  },
+  "Faina": {
+    "umidade baixa": {
+      "value": 58.83880978662332,
+      "threshold": 60,
+      "difference": -1.1611902133766776,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "1955-Faina",
+      "unit": "%",
+      "tave": 29.25,
+      "tdave": 20.350000000000023
+    }
+  },
+  "Gameleira de Goiás": {
+    "umidade baixa": {
+      "value": 50.51778741667942,
+      "threshold": 60,
+      "difference": -9.482212583320582,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "5774-Gameleira_de_Goias",
+      "unit": "%",
+      "tave": 28.650000000000034,
+      "tdave": 17.350000000000023
+    }
+  },
+  "Doverlândia": {
+    "umidade baixa": {
+      "value": 35.326051867196504,
+      "threshold": 60,
+      "difference": -24.673948132803496,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "1847-Doverlandia",
+      "unit": "%",
+      "tave": 34.75,
+      "tdave": 17.150000000000034
+    }
+  },
+  "Goiandira": {
+    "umidade baixa": {
+      "value": 25.60796587467429,
+      "threshold": 60,
+      "difference": -34.39203412532571,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "2137-Goiandira",
+      "unit": "%",
+      "tave": 33.55000000000001,
+      "tdave": 11.150000000000034
+    }
+  },
+  "Guaraíta": {
+    "umidade baixa": {
+      "value": 59.379543760657036,
+      "threshold": 60,
+      "difference": -0.620456239342964,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "2220-Guaraita",
+      "unit": "%",
+      "tave": 28.450000000000045,
+      "tdave": 19.75
+    }
+  },
+  "Estrela do Norte": {
+    "umidade baixa": {
+      "value": 57.014987385016056,
+      "threshold": 60,
+      "difference": -2.985012614983944,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "1938-Estrela_do_Norte",
+      "unit": "%",
+      "tave": 30.55000000000001,
+      "tdave": 21.05000000000001
+    }
+  },
+  "Edéia": {
+    "umidade baixa": {
+      "value": 33.40184412150327,
+      "threshold": 60,
+      "difference": -26.598155878496733,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "1860-Edeia",
+      "unit": "%",
+      "tave": 33.35000000000002,
+      "tdave": 15.050000000000011
+    }
+  },
+  "Diorama": {
+    "umidade baixa": {
+      "value": 48.908026432378,
+      "threshold": 60,
+      "difference": -11.091973567621999,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "1782-Diorama",
+      "unit": "%",
+      "tave": 31.950000000000045,
+      "tdave": 19.850000000000023
+    }
+  },
+  "Cromínia": {
+    "umidade baixa": {
+      "value": 33.58098475347248,
+      "threshold": 60,
+      "difference": -26.419015246527522,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "1692-Crominia",
+      "unit": "%",
+      "tave": 32.450000000000045,
+      "tdave": 14.350000000000023
+    }
+  },
+  "Crixás": {
+    "umidade baixa": {
+      "value": 56.36864291993534,
+      "threshold": 60,
+      "difference": -3.63135708006466,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 57600.0,
+      "polygon_name": "1689-Crixas",
+      "unit": "%",
+      "tave": 30.75,
+      "tdave": 21.05000000000001
+    }
+  },
+  "Damolândia": {
+    "umidade baixa": {
+      "value": 53.846305350169686,
+      "threshold": 60,
+      "difference": -6.153694649830314,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "1746-Damolandia",
+      "unit": "%",
+      "tave": 28.850000000000023,
+      "tdave": 18.55000000000001
+    }
+  },
+  "Damianópolis": {
+    "umidade baixa": {
+      "value": 58.862584026927536,
+      "threshold": 60,
+      "difference": -1.1374159730724642,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "1744-Damianopolis",
+      "unit": "%",
+      "tave": 29.350000000000023,
+      "tdave": 20.450000000000045
+    }
+  },
+  "Cumari": {
+    "umidade baixa": {
+      "value": 23.51055647682948,
+      "threshold": 60,
+      "difference": -36.48944352317052,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "1716-Cumari",
+      "unit": "%",
+      "tave": 34.85000000000002,
+      "tdave": 10.950000000000045
+    }
+  },
+  "Corumbaíba": {
+    "umidade baixa": {
+      "value": 28.344121876424982,
+      "threshold": 60,
+      "difference": -31.655878123575018,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "1647-Corumbaiba",
+      "unit": "%",
+      "tave": 33.150000000000034,
+      "tdave": 12.350000000000023
+    }
+  },
+  "Corumbá de Goiás": {
+    "umidade baixa": {
+      "value": 56.68106253565186,
+      "threshold": 60,
+      "difference": -3.3189374643481386,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "1646-Corumba_de_Goias",
+      "unit": "%",
+      "tave": 27.75,
+      "tdave": 18.350000000000023
+    }
+  },
+  "Córrego do Ouro": {
+    "umidade baixa": {
+      "value": 53.509581513994206,
+      "threshold": 60,
+      "difference": -6.490418486005794,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "1637-Corrego_do_Ouro",
+      "unit": "%",
+      "tave": 30.150000000000034,
+      "tdave": 19.650000000000034
+    }
+  },
+  "Goianira": {
+    "umidade baixa": {
+      "value": 48.48112549226348,
+      "threshold": 60,
+      "difference": -11.51887450773652,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "2141-Goianira",
+      "unit": "%",
+      "tave": 30.350000000000023,
+      "tdave": 18.25
+    }
+  },
+  "Edealina": {
+    "umidade baixa": {
+      "value": 31.426332985408695,
+      "threshold": 60,
+      "difference": -28.573667014591305,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "1859-Edealina",
+      "unit": "%",
+      "tave": 33.75,
+      "tdave": 14.450000000000045
+    }
+  },
+  "Chapadão do Céu": {
+    "umidade baixa": {
+      "value": 31.415658827807764,
+      "threshold": 60,
+      "difference": -28.584341172192236,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "1476-Chapadao_do_Ceu",
+      "unit": "%",
+      "tave": 32.25,
+      "tdave": 13.150000000000034
+    }
+  },
+  "Heitoraí": {
+    "umidade baixa": {
+      "value": 57.09825460904875,
+      "threshold": 60,
+      "difference": -2.9017453909512483,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "2264-Heitorai",
+      "unit": "%",
+      "tave": 29.450000000000045,
+      "tdave": 20.05000000000001
+    }
+  },
+  "Campo Alegre de Goiás": {
+    "umidade baixa": {
+      "value": 36.26234410448023,
+      "threshold": 60,
+      "difference": -23.737655895519772,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "1188-Campo_Alegre_de_Goias",
+      "unit": "%",
+      "tave": 30.75,
+      "tdave": 14.050000000000011
+    }
+  },
+  "Davinópolis": {
+    "umidade baixa": {
+      "value": 30.40548020980002,
+      "threshold": 60,
+      "difference": -29.59451979019998,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "1752-Davinopolis",
+      "unit": "%",
+      "tave": 32.25,
+      "tdave": 12.650000000000034
+    }
+  },
+  "Cezarina": {
+    "umidade baixa": {
+      "value": 34.906228973307876,
+      "threshold": 60,
+      "difference": -25.093771026692124,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "1464-Cezarina",
+      "unit": "%",
+      "tave": 33.25,
+      "tdave": 15.650000000000034
+    }
+  },
+  "Caturaí": {
+    "umidade baixa": {
+      "value": 46.850940885694854,
+      "threshold": 60,
+      "difference": -13.149059114305146,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "1422-Caturai",
+      "unit": "%",
+      "tave": 30.950000000000045,
+      "tdave": 18.25
+    }
+  },
+  "Inhumas": {
+    "umidade baixa": {
+      "value": 51.395000246586974,
+      "threshold": 60,
+      "difference": -8.604999753413026,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "2422-Inhumas",
+      "unit": "%",
+      "tave": 29.55000000000001,
+      "tdave": 18.450000000000045
+    }
+  },
+  "Castelândia": {
+    "umidade baixa": {
+      "value": 35.61258346917266,
+      "threshold": 60,
+      "difference": -24.387416530827338,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "1399-Castelandia",
+      "unit": "%",
+      "tave": 32.55000000000001,
+      "tdave": 15.350000000000023
+    }
+  },
+  "Caldas Novas": {
+    "umidade baixa": {
+      "value": 31.733108733591557,
+      "threshold": 60,
+      "difference": -28.266891266408443,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "1138-Caldas_Novas",
+      "unit": "%",
+      "tave": 32.650000000000034,
+      "tdave": 13.650000000000034
+    }
+  },
+  "Caçu": {
+    "umidade baixa": {
+      "value": 32.48323426345352,
+      "threshold": 60,
+      "difference": -27.516765736546482,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "1096-Cacu",
+      "unit": "%",
+      "tave": 32.35000000000002,
+      "tdave": 13.75
+    }
+  },
+  "Cachoeira Dourada": {
+    "umidade baixa": {
+      "value": 34.96135841006277,
+      "threshold": 60,
+      "difference": -25.038641589937228,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "1080-Cachoeira_Dourada",
+      "unit": "%",
+      "tave": 31.850000000000023,
+      "tdave": 14.450000000000045
+    }
+  },
+  "Cachoeira Alta": {
+    "umidade baixa": {
+      "value": 32.66666690653143,
+      "threshold": 60,
+      "difference": -27.333333093468568,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "1071-Cachoeira_Alta",
+      "unit": "%",
+      "tave": 32.25,
+      "tdave": 13.75
+    }
+  },
+  "Buriti de Goiás": {
+    "umidade baixa": {
+      "value": 55.0655119232321,
+      "threshold": 60,
+      "difference": -4.934488076767899,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 72000.0,
+      "polygon_name": "1034-Buriti_de_Goias",
+      "unit": "%",
+      "tave": 29.650000000000034,
+      "tdave": 19.650000000000034
+    }
+  },
+  "Buriti Alegre": {
+    "umidade baixa": {
+      "value": 30.973435892333544,
+      "threshold": 60,
+      "difference": -29.026564107666456,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "1032-Buriti_Alegre",
+      "unit": "%",
+      "tave": 32.85000000000002,
+      "tdave": 13.450000000000045
+    }
+  },
+  "Britânia": {
+    "umidade baixa": {
+      "value": 58.02427012360598,
+      "threshold": 60,
+      "difference": -1.9757298763940199,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 59400.0,
+      "polygon_name": "1012-Britania",
+      "unit": "%",
+      "tave": 30.350000000000023,
+      "tdave": 21.150000000000034
+    }
+  },
+  "Bonópolis": {
+    "umidade baixa": {
+      "value": 46.36790031639879,
+      "threshold": 60,
+      "difference": -13.632099683601211,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "0952-Bonopolis",
+      "unit": "%",
+      "tave": 33.450000000000045,
+      "tdave": 20.350000000000023
+    }
+  },
+  "Bom Jesus de Goiás": {
+    "umidade baixa": {
+      "value": 34.04554930829918,
+      "threshold": 60,
+      "difference": -25.95445069170082,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "0917-Bom_Jesus_de_Goias",
+      "unit": "%",
+      "tave": 32.55000000000001,
+      "tdave": 14.650000000000034
+    }
+  },
+  "Bom Jardim de Goiás": {
+    "umidade baixa": {
+      "value": 42.01448651826126,
+      "threshold": 60,
+      "difference": -17.985513481738742,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "0906-Bom_Jardim_de_Goias",
+      "unit": "%",
+      "tave": 33.55000000000001,
+      "tdave": 18.850000000000023
+    }
+  },
+  "Campos Verdes": {
+    "umidade baixa": {
+      "value": 49.95493286417774,
+      "threshold": 60,
+      "difference": -10.045067135822258,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "1226-Campos_Verdes",
+      "unit": "%",
+      "tave": 32.450000000000045,
+      "tdave": 20.650000000000034
+    }
+  },
+  "Bela Vista de Goiás": {
+    "umidade baixa": {
+      "value": 41.17954431590478,
+      "threshold": 60,
+      "difference": -18.820455684095222,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "0812-Bela_Vista_de_Goias",
+      "unit": "%",
+      "tave": 30.55000000000001,
+      "tdave": 15.850000000000023
+    }
+  },
+  "Cabeceiras": {
+    "umidade baixa": {
+      "value": 59.5833041153918,
+      "threshold": 60,
+      "difference": -0.4166958846082025,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "1054-Cabeceiras",
+      "unit": "%",
+      "tave": 27.75,
+      "tdave": 19.150000000000034
+    }
+  },
+  "Caldazinha": {
+    "umidade baixa": {
+      "value": 45.9666830108379,
+      "threshold": 60,
+      "difference": -14.033316989162103,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "1139-Caldazinha",
+      "unit": "%",
+      "tave": 29.850000000000023,
+      "tdave": 16.950000000000045
+    }
+  },
+  "Baliza": {
+    "umidade baixa": {
+      "value": 38.352791412220604,
+      "threshold": 60,
+      "difference": -21.647208587779396,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "0706-Baliza",
+      "unit": "%",
+      "tave": 33.950000000000045,
+      "tdave": 17.75
+    }
+  },
+  "Aurilândia": {
+    "umidade baixa": {
+      "value": 43.09506752521593,
+      "threshold": 60,
+      "difference": -16.90493247478407,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "0673-Aurilandia",
+      "unit": "%",
+      "tave": 32.650000000000034,
+      "tdave": 18.450000000000045
+    }
+  },
+  "Cristianópolis": {
+    "umidade baixa": {
+      "value": 37.42525388099441,
+      "threshold": 60,
+      "difference": -22.57474611900559,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "1684-Cristianopolis",
+      "unit": "%",
+      "tave": 30.650000000000034,
+      "tdave": 14.450000000000045
+    }
+  },
+  "Arenópolis": {
+    "umidade baixa": {
+      "value": 43.23279489821481,
+      "threshold": 60,
+      "difference": -16.767205101785187,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "0619-Arenopolis",
+      "unit": "%",
+      "tave": 33.150000000000034,
+      "tdave": 18.950000000000045
+    }
+  },
+  "Itaguaru": {
+    "umidade baixa": {
+      "value": 55.357827885792254,
+      "threshold": 60,
+      "difference": -4.642172114207746,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "2521-Itaguaru",
+      "unit": "%",
+      "tave": 29.450000000000045,
+      "tdave": 19.55000000000001
+    }
+  },
+  "Araguapaz": {
+    "umidade baixa": {
+      "value": 57.54895422109618,
+      "threshold": 60,
+      "difference": -2.4510457789038185,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "0562-Araguapaz",
+      "unit": "%",
+      "tave": 29.850000000000023,
+      "tdave": 20.55000000000001
+    }
+  },
+  "Apore": {
+    "umidade baixa": {
+      "value": 28.13110896522816,
+      "threshold": 60,
+      "difference": -31.86889103477184,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "0528-Apore",
+      "unit": "%",
+      "tave": 33.05000000000001,
+      "tdave": 12.150000000000034
+    }
+  },
+  "Amorinópolis": {
+    "umidade baixa": {
+      "value": 40.13130428562351,
+      "threshold": 60,
+      "difference": -19.868695714376493,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "0448-Amorinopolis",
+      "unit": "%",
+      "tave": 33.25,
+      "tdave": 17.850000000000023
+    }
+  },
+  "Amaralina": {
+    "umidade baixa": {
+      "value": 48.46581288830315,
+      "threshold": 60,
+      "difference": -11.534187111696852,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "0435-Amaralina",
+      "unit": "%",
+      "tave": 32.55000000000001,
+      "tdave": 20.25
+    }
+  },
+  "Anicuns": {
+    "umidade baixa": {
+      "value": 53.561793717704035,
+      "threshold": 60,
+      "difference": -6.438206282295965,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 57600.0,
+      "polygon_name": "0492-Anicuns",
+      "unit": "%",
+      "tave": 29.05000000000001,
+      "tdave": 18.650000000000034
+    }
+  },
+  "Araçu": {
+    "umidade baixa": {
+      "value": 48.812487261892805,
+      "threshold": 60,
+      "difference": -11.187512738107195,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "0550-Aracu",
+      "unit": "%",
+      "tave": 30.450000000000045,
+      "tdave": 18.450000000000045
+    }
+  },
+  "Anápolis": {
+    "umidade baixa": {
+      "value": 52.51443827391983,
+      "threshold": 60,
+      "difference": -7.485561726080171,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "0463-Anapolis",
+      "unit": "%",
+      "tave": 28.850000000000023,
+      "tdave": 18.150000000000034
+    }
+  },
+  "Americano do Brasil": {
+    "umidade baixa": {
+      "value": 58.43194821418848,
+      "threshold": 60,
+      "difference": -1.5680517858115195,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 57600.0,
+      "polygon_name": "0443-Americano_do_Brasil",
+      "unit": "%",
+      "tave": 27.55000000000001,
+      "tdave": 18.650000000000034
+    }
+  },
+  "Alto Horizonte": {
+    "umidade baixa": {
+      "value": 56.22117868605705,
+      "threshold": 60,
+      "difference": -3.7788213139429487,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "0399-Alto_Horizonte",
+      "unit": "%",
+      "tave": 30.150000000000034,
+      "tdave": 20.450000000000045
+    }
+  },
+  "Campestre de Goiás": {
+    "umidade baixa": {
+      "value": 42.604803169399766,
+      "threshold": 60,
+      "difference": -17.395196830600234,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "1171-Campestre_de_Goias",
+      "unit": "%",
+      "tave": 31.850000000000023,
+      "tdave": 17.55000000000001
+    }
+  },
+  "Aloândia": {
+    "umidade baixa": {
+      "value": 30.56458024017023,
+      "threshold": 60,
+      "difference": -29.43541975982977,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "0371-Aloandia",
+      "unit": "%",
+      "tave": 34.25,
+      "tdave": 14.450000000000045
+    }
+  },
+  "Avelinópolis": {
+    "umidade baixa": {
+      "value": 44.94468759098702,
+      "threshold": 60,
+      "difference": -15.055312409012977,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "0684-Avelinopolis",
+      "unit": "%",
+      "tave": 31.350000000000023,
+      "tdave": 17.950000000000045
+    }
+  },
+  "Alexânia": {
+    "umidade baixa": {
+      "value": 54.9811865268713,
+      "threshold": 60,
+      "difference": -5.018813473128702,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "0355-Alexania",
+      "unit": "%",
+      "tave": 27.950000000000045,
+      "tdave": 18.05000000000001
+    }
+  },
+  "Água Limpa": {
+    "umidade baixa": {
+      "value": 29.701050145276714,
+      "threshold": 60,
+      "difference": -30.298949854723286,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "0304-Agua_Limpa",
+      "unit": "%",
+      "tave": 33.25,
+      "tdave": 13.150000000000034
+    }
+  },
+  "Adelândia": {
+    "umidade baixa": {
+      "value": 54.83931177828478,
+      "threshold": 60,
+      "difference": -5.160688221715219,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 52200.0,
+      "polygon_name": "0277-Adelandia",
+      "unit": "%",
+      "tave": 28.75,
+      "tdave": 18.75
+    }
+  },
+  "Acreúna": {
+    "umidade baixa": {
+      "value": 33.13180361187189,
+      "threshold": 60,
+      "difference": -26.868196388128112,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "0273-Acreuna",
+      "unit": "%",
+      "tave": 33.150000000000034,
+      "tdave": 14.75
+    }
+  },
+  "Abadiânia": {
+    "umidade baixa": {
+      "value": 53.744114755153696,
+      "threshold": 60,
+      "difference": -6.255885244846304,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 66600.0,
+      "polygon_name": "0249-Abadiania",
+      "unit": "%",
+      "tave": 28.450000000000045,
+      "tdave": 18.150000000000034
+    }
+  },
+  "Aparecida de Goiânia": {
+    "umidade baixa": {
+      "value": 40.33605182407595,
+      "threshold": 60,
+      "difference": -19.663948175924048,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 68400.0,
+      "polygon_name": "0515-Aparecida_de_Goiania",
+      "unit": "%",
+      "tave": 31.25,
+      "tdave": 16.150000000000034
+    }
+  },
+  "Aragoiânia": {
+    "umidade baixa": {
+      "value": 40.39728058490475,
+      "threshold": 60,
+      "difference": -19.60271941509525,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "0553-Aragoiania",
+      "unit": "%",
+      "tave": 30.55000000000001,
+      "tdave": 15.550000000000011
+    }
+  },
+  "Aragarças": {
+    "umidade baixa": {
+      "value": 41.22690310926212,
+      "threshold": 60,
+      "difference": -18.773096890737882,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "0552-Aragarcas",
+      "unit": "%",
+      "tave": 34.450000000000045,
+      "tdave": 19.350000000000023
+    }
+  },
+  "Santa Rosa de Goiás": {
+    "umidade baixa": {
+      "value": 54.864514407259925,
+      "threshold": 60,
+      "difference": -5.135485592740075,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 59400.0,
+      "polygon_name": "4636-Santa_Rosa_de_Goias",
+      "unit": "%",
+      "tave": 28.850000000000023,
+      "tdave": 18.850000000000023
+    }
+  },
+  "Novo Gama": {
+    "umidade baixa": {
+      "value": 51.807161177514715,
+      "threshold": 60,
+      "difference": -8.192838822485285,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 59400.0,
+      "polygon_name": "3590-Novo_Gama",
+      "unit": "%",
+      "tave": 28.650000000000034,
+      "tdave": 17.75
+    }
+  },
+  "Brazabrantes": {
+    "umidade baixa": {
+      "value": 51.36883568259228,
+      "threshold": 60,
+      "difference": -8.631164317407723,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "0992-Brazabrantes",
+      "unit": "%",
+      "tave": 29.450000000000045,
+      "tdave": 18.350000000000023
+    }
+  },
+  "Caiapônia": {
+    "umidade baixa": {
+      "value": 35.55355365544701,
+      "threshold": 60,
+      "difference": -24.44644634455299,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "1111-Caiaponia",
+      "unit": "%",
+      "tave": 33.150000000000034,
+      "tdave": 15.850000000000023
+    }
+  },
+  "Águas Lindas de Goiás": {
+    "umidade baixa": {
+      "value": 59.417428585585306,
+      "threshold": 60,
+      "difference": -0.5825714144146943,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "0318-Aguas_Lindas_de_Goias",
+      "unit": "%",
+      "tave": 27.05000000000001,
+      "tdave": 18.450000000000045
+    }
+  },
+  "Anhanguera": {
+    "umidade baixa": {
+      "value": 23.484379090544873,
+      "threshold": 60,
+      "difference": -36.51562090945512,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "0489-Anhanguera",
+      "unit": "%",
+      "tave": 34.75,
+      "tdave": 10.850000000000023
+    }
+  },
+  "Santa Bárbara de Goiás": {
+    "umidade baixa": {
+      "value": 42.604803169399766,
+      "threshold": 60,
+      "difference": -17.395196830600234,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "4521-Santa_Barbara_de_Goias",
+      "unit": "%",
+      "tave": 31.850000000000023,
+      "tdave": 17.55000000000001
+    }
+  },
+  "Goianápolis": {
+    "umidade baixa": {
+      "value": 50.35892195786833,
+      "threshold": 60,
+      "difference": -9.641078042131667,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 63000.0,
+      "polygon_name": "2136-Goianapolis",
+      "unit": "%",
+      "tave": 29.25,
+      "tdave": 17.850000000000023
+    }
+  },
+  "Bonfinópolis": {
+    "umidade baixa": {
+      "value": 48.797765478963136,
+      "threshold": 60,
+      "difference": -11.202234521036864,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "0943-Bonfinopolis",
+      "unit": "%",
+      "tave": 29.25,
+      "tdave": 17.350000000000023
+    }
+  },
+  "Mineiros": {
+    "umidade baixa": {
+      "value": 31.518372922914807,
+      "threshold": 60,
+      "difference": -28.481627077085193,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "3265-Mineiros",
+      "unit": "%",
+      "tave": 33.35000000000002,
+      "tdave": 14.150000000000034
+    }
+  },
+  "Aparecida do Rio Doce": {
+    "umidade baixa": {
+      "value": 29.5365742711998,
+      "threshold": 60,
+      "difference": -30.4634257288002,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 64800.0,
+      "polygon_name": "0516-Aparecida_do_Rio_Doce",
+      "unit": "%",
+      "tave": 34.05000000000001,
+      "tdave": 13.75
+    }
+  },
+  "Abadia de Goiás": {
+    "umidade baixa": {
+      "value": 43.24751950886031,
+      "threshold": 60,
+      "difference": -16.752480491139693,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 70200.0,
+      "polygon_name": "0247-Abadia_de_Goias",
+      "unit": "%",
+      "tave": 30.25,
+      "tdave": 16.350000000000023
+    }
+  },
+  "Cidade Ocidental": {
+    "umidade baixa": {
+      "value": 53.433673797888936,
+      "threshold": 60,
+      "difference": -6.566326202111064,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "1499-Cidade_Ocidental",
+      "unit": "%",
+      "tave": 28.55000000000001,
+      "tdave": 18.150000000000034
+    }
+  },
+  "Cristalina": {
+    "umidade baixa": {
+      "value": 49.51581967310453,
+      "threshold": 60,
+      "difference": -10.48418032689547,
+      "date": "2025-11-26 00:00:00",
+      "seconds": 61200.0,
+      "polygon_name": "1682-Cristalina",
+      "unit": "%",
+      "tave": 28.450000000000045,
+      "tdave": 16.850000000000023
+    }
+  }
+}

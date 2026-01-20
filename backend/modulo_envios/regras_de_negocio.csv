@@ -1,0 +1,15 @@
+ID;Categoria;Requisito Funcional;Endpoint de Exemplo;Ator
+RF-01;Iniciação do Processo;O fluxo de processamento de alertas deve ser acionado por uma requisição POST.;POST /alerts/start;Sistema (Agendador de Tarefas)
+RF-02;Integração Externa;O sistema deve buscar todos os alertas meteorológicos para o dia atual em uma API externa.;GET /alerts/today (na API externa);Sistema
+RF-03;Tratamento de Ausência de Alertas;Se nenhum alerta for encontrado para o dia, o processo deve ser encerrado informando a ausência de alertas.;POST /alerts/start;Sistema
+RF-04;Processamento Assíncrono;O processamento principal dos alertas deve ser executado em segundo plano para não bloquear a resposta da API.;POST /alerts/start;Sistema
+RF-05;Agrupamento de Dados;Os alertas devem ser agrupados por cidade para otimizar as consultas subsequentes.;N/A;Sistema
+RF-06;Busca de Usuários;Para cada alerta, o sistema deve buscar os usuários que se inscreveram para receber notificações daquele tipo de evento e cidade.;GET /usuarios/preferencia/evento/{idEvento}/cidade/{idCidade} (na API externa);Sistema
+RF-07;Consolidação de Notificações;Um usuário deve receber uma única notificação consolidada com todos os alertas relevantes para ele.;N/A;Usuário Final
+RF-08;Preferências de Canal;As notificações devem ser geradas e enviadas de acordo com os canais de comunicação preferidos pelo usuário (ex: email, whatsapp).;N/A;Usuário Final
+RF-09;Customização de Conteúdo;O conteúdo da notificação deve ser customizado para cada canal (HTML para e-mail, texto formatado para WhatsApp).;N/A;Sistema
+RF-10;Arquitetura de Fila;As notificações geradas devem ser enfileiradas no Redis para envio assíncrono.;N/A;Sistema
+RF-11;Envio Desacoplado;Um processo consumidor separado deve ler a fila e realizar o envio final das notificações.;N/A;Sistema
+RF-12;Tipos de Alertas;O sistema deve ser capaz de processar diferentes tipos de alertas: chuva intensa, vento, umidade, temperatura máxima e temperatura mínima.;N/A;Sistema
+RF-13;Templates de Notificação;O sistema deve usar templates específicos para formatar o conteúdo das notificações para cada canal.;/test-email-template, /test-whatsapp-template;Sistema
+RF-14;Níveis de Severidade;O sistema deve interpretar e exibir mensagens diferentes com base nos níveis de severidade de alertas de umidade, vento e chuva.;N/A;Sistema

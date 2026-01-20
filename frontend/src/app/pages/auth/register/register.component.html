@@ -1,0 +1,85 @@
+<mat-card class="register-card">
+  <div class="brand">
+    <img src="../../../../assets/cempa_horizontal.png" alt="CEMPA-Cerrado" class="brand-logo" />
+  </div>
+  <p class="intro-text">
+    Receba avisos personalizados sobre riscos climáticos diretamente do Centro de Excelência em Estudos, Monitoramento e Previsões Ambientais do Cerrado/Universidade Federal de Goiás (CEMPA).
+  </p>
+  <mat-card-content>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Nome Completo</mat-label>
+        <input matInput formControlName="fullName" />
+        <mat-error *ngIf="form.get('fullName')?.hasError('required')">
+          O nome é obrigatório.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>E-mail</mat-label>
+        <input matInput type="email" formControlName="email" />
+        <mat-error *ngIf="form.get('email')?.hasError('required')">
+          O e-mail é obrigatório.
+        </mat-error>
+        <mat-error *ngIf="form.get('email')?.hasError('email')">
+          Insira um e-mail válido.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Número de Celular</mat-label>
+        <input matInput type="tel" formControlName="phoneNumber" placeholder="(XX) XXXXX-XXXX" maxlength="11"/>
+        <mat-error *ngIf="form.get('phoneNumber')?.hasError('required')">
+          O telefone é obrigatório.
+        </mat-error>
+        <mat-error *ngIf="form.get('phoneNumber')?.hasError('pattern')">
+          O número de telefone deve ter 11 dígitos (apenas números).
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Senha</mat-label>
+        <input matInput type="password" formControlName="password" />
+        <mat-error *ngIf="form.get('password')?.hasError('required')">
+          A senha é obrigatória.
+        </mat-error>
+        <mat-error *ngIf="form.get('password')?.hasError('minlength')">
+          A senha deve ter no mínimo 6 caracteres.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Confirme a Senha</mat-label>
+        <input matInput type="password" formControlName="confirmPassword" />
+        <mat-error *ngIf="form.get('confirmPassword')?.hasError('required')">
+          A confirmação de senha é obrigatória.
+        </mat-error>
+        <mat-error *ngIf="form.hasError('passwordMismatch')">
+          As senhas não coincidem.
+        </mat-error>
+      </mat-form-field>
+
+      <div class="terms-section">
+        <mat-checkbox color="primary" formControlName="termsAccepted">
+          Concordo com o tratamento dos meus dados pessoais para a finalidade de receber avisos de eventos meteorológicos, nos termos da Lei Geral de Proteção de Dados (LGPD).
+        </mat-checkbox>
+        
+        <mat-error *ngIf="form.get('termsAccepted')?.touched && form.get('termsAccepted')?.invalid" class="terms-error">
+          Você deve aceitar os termos para continuar.
+        </mat-error>
+      </div>
+
+      <div class="actions">
+        <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">
+          Cadastrar
+        </button>
+      </div>
+
+      <div class="login-link">
+        <span>Já tem uma conta?</span>
+        <a routerLink="/auth/login">Entrar</a>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

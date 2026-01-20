@@ -1,0 +1,203 @@
+
+{
+  "cidades_alertas": [
+    {
+      "cidade": "Uruguaiana",
+      "uf": "RS",
+      "alertas": [
+        {
+          "tipo": "temperatura baixa",
+          "valor": 2.5,
+          "unidade": "°C",
+          "data": "17/11/2025",
+          "horario": "04:00",
+          "periodo": "03:00 às 07:00"
+        }
+      ]
+    },
+    {
+      "cidade": "Bagé",
+      "uf": "RS",
+      "alertas": [
+        {
+          "tipo": "temperatura baixa",
+          "valor": 4.0,
+          "unidade": "°C",
+          "data": "17/11/2025",
+          "horario": "05:00",
+          "periodo": "04:00 às 08:00"
+        },
+        {
+          "tipo": "vento",
+          "valor": 80,
+          "unidade": "km/h",
+          "data": "17/11/2025",
+          "horario": "14:00",
+          "periodo": "12:00 às 18:00"
+        }
+      ]
+    },
+    {
+      "cidade": "Cuiabá",
+      "uf": "MT",
+      "alertas": [
+        {
+          "tipo": "temperatura alta",
+          "valor": 41.0,
+          "unidade": "°C",
+          "data": "17/11/2025",
+          "horario": "15:00",
+          "periodo": "14:00 às 17:00"
+        }
+      ]
+    },
+    {
+      "cidade": "Palmas",
+      "uf": "TO",
+      "alertas": [
+        {
+          "tipo": "temperatura alta",
+          "valor": 39.8,
+          "unidade": "°C",
+          "data": "17/11/2025",
+          "horario": "15:30",
+          "periodo": "14:00 às 17:00"
+        },
+        {
+          "tipo": "umidade baixa",
+          "valor": 18,
+          "unidade": "%",
+          "data": "17/11/2025",
+          "horario": "16:00",
+          "periodo": "15:00 às 18:00"
+        }
+      ]
+    },
+    {
+      "cidade": "Brasília",
+      "uf": "DF",
+      "alertas": [
+        {
+          "tipo": "umidade baixa",
+          "valor": 35,
+          "unidade": "%",
+          "data": "17/11/2025",
+          "horario": "14:00",
+          "periodo": "13:00 às 17:00"
+        }
+      ]
+    },
+    {
+      "cidade": "Goiânia",
+      "uf": "GO",
+      "alertas": [
+        {
+          "tipo": "umidade baixa",
+          "valor": 25,
+          "unidade": "%",
+          "data": "17/11/2025",
+          "horario": "15:00",
+          "periodo": "14:00 às 18:00"
+        }
+      ]
+    },
+    {
+      "cidade": "Jataí",
+      "uf": "GO",
+      "alertas": [
+        {
+          "tipo": "umidade baixa",
+          "valor": 15,
+          "unidade": "%",
+          "data": "17/11/2025",
+          "horario": "15:00",
+          "periodo": "14:00 às 18:00"
+        }
+      ]
+    },
+    {
+      "cidade": "Natal",
+      "uf": "RN",
+      "alertas": [
+        {
+          "tipo": "vento",
+          "valor": 50,
+          "unidade": "km/h",
+          "data": "17/11/2025",
+          "horario": "11:00",
+          "periodo": "10:00 às 14:00"
+        }
+      ]
+    },
+    {
+      "cidade": "Florianópolis",
+      "uf": "SC",
+      "alertas": [
+        {
+          "tipo": "vento",
+          "valor": 75,
+          "unidade": "km/h",
+          "data": "17/11/2025",
+          "horario": "16:00",
+          "periodo": "15:00 às 19:00"
+        }
+      ]
+    },
+    {
+      "cidade": "Rio Grande",
+      "uf": "RS",
+      "alertas": [
+        {
+          "tipo": "vento",
+          "valor": 100,
+          "unidade": "km/h",
+          "data": "17/11/2025",
+          "horario": "20:00",
+          "periodo": "18:00 às 22:00"
+        }
+      ]
+    },
+    {
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "alertas": [
+        {
+          "tipo": "chuva",
+          "valor": 10,
+          "unidade": "mm",
+          "data": "17/11/2025",
+          "horario": "17:00",
+          "periodo": "16:00 às 19:00"
+        }
+      ]
+    },
+    {
+      "cidade": "Belém",
+      "uf": "PA",
+      "alertas": [
+        {
+          "tipo": "chuva",
+          "valor": 25,
+          "unidade": "mm",
+          "data": "17/11/2025",
+          "horario": "16:00",
+          "periodo": "15:00 às 18:00"
+        }
+      ]
+    },
+    {
+      "cidade": "Manaus",
+      "uf": "AM",
+      "alertas": [
+        {
+          "tipo": "chuva",
+          "valor": 50,
+          "unidade": "mm",
+          "data": "17/11/2025",
+          "horario": "15:00",
+          "periodo": "14:00 às 17:00"
+        }
+      ]
+    }
+  ]
+}

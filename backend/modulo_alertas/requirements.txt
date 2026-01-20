@@ -1,0 +1,19 @@
+# SIGEDAM V2 - Módulo de Alertas - Dependências Python
+
+# HTTP & Requisições
+requests>=2.31.0
+
+# Análise de dados
+pandas>=2.0.0
+
+# Variáveis de ambiente
+python-dotenv>=1.0.0
+
+# Utilitários
+python-dateutil>=2.8.2
+
+# Logging e observabilidade
+loguru>=0.7.0
+
+# Type hints (optional, para desenvolvimento)
+typing-extensions>=4.8.0

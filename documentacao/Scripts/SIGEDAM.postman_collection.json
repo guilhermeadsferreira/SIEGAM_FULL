@@ -1,0 +1,905 @@
+{
+	"info": {
+		"_postman_id": "634fce00-60cb-489e-85d1-3fe8b4794d90",
+		"name": "SIGEDAM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30489755"
+	},
+	"item": [
+		{
+			"name": "Envios",
+			"item": [
+				{
+					"name": "Start",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{UrlEnvios}}/alerts/start",
+							"host": [
+								"{{UrlEnvios}}"
+							],
+							"path": [
+								"alerts",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Notification teste",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"canal\": \"email\",\r\n  \"usuarios\": [\r\n    {\r\n      \"id\": \"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\",\r\n      \"nome\": \"Admin Principal\",\r\n      \"email\": \"admin@admin.com\",\r\n      \"whatsapp\": \"62999999999\",\r\n      \"dataCriacao\": \"2025-11-23T20:52:15.379122\",\r\n      \"dataUltimaEdicao\": \"2025-11-25\",\r\n      \"nivelAcesso\": \"ADMIN\",\r\n      \"cidadeId\": \"0fda8ece-f84f-47cf-affe-471159a08c88\",\r\n      \"cidadeNome\": \"Campo Limpo de Goiás\",\r\n      \"canaisPreferidos\": [\r\n        {\r\n          \"id\": \"272d6a2d-e0d1-4fa9-abab-055131c2a4cc\",\r\n          \"nomeCanal\": \"Whatsapp\",\r\n          \"dataInclusao\": \"2025-11-14\"\r\n        },\r\n        {\r\n          \"id\": \"ed3f001d-655e-428a-9c9f-566e9d4f1203\",\r\n          \"nomeCanal\": \"Email\",\r\n          \"dataInclusao\": \"2025-11-14\"\r\n        }\r\n      ],\r\n      \"eventoId\": \"dbce7e56-d8d9-4c42-911b-8bdaee7f54b4\",\r\n      \"eventoNome\": \"Umidade Baixa\"\r\n    }\r\n  ],\r\n  \"conteudo\": \"<html><body style=\\\"font-family: Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;\\\">        <div style=\\\"background-color: #e74c3c; color: white; padding: 15px; text-align: center; border-radius: 5px 5px 0 0;\\\">    <h2>Resumo de Avisos Meteorológicos</h2></div>    <div style=\\\"padding: 20px;\\\"><div style=\\\"margin-bottom: 30px; padding: 15px; border: 1px solid #eee; border-radius: 5px;\\\">    <h3 style=\\\"margin-bottom: 10px;\\\">Município: Adelândia/GO</h3>    <div style=\\\"margin-bottom: 20px;\\\">    <div style=\\\"background-color: #3498db; color: white; padding: 8px; border-radius: 4px;\\\"><strong>Aviso - Previsão de temperatura mínima baixa</strong>    </div>    <div style=\\\"padding: 10px;\\\"><p><strong>Valor observado:</strong> 2°C</p><p><strong>Data:</strong> 17/11/2025</p><p>Temperatura mínima prevista é de <strong>2°C</strong>no período entre <strong>03:00 às 05:00</strong>.</p>    </div>    <hr style=\\\"border: 0; border-top: 1px solid #ddd; margin-top: 15px;\\\"></div></div><div style=\\\"margin-bottom: 30px; padding: 15px; border: 1px solid #eee; border-radius: 5px;\\\">    <h3 style=\\\"margin-bottom: 10px;\\\">Município: Aruanã/GO</h3>    <div style=\\\"margin-bottom: 20px;\\\">    <div style=\\\"background-color: #3498db; color: white; padding: 8px; border-radius: 4px;\\\"><strong>Aviso - Previsão de temperatura mínima baixa</strong>    </div>    <div style=\\\"padding: 10px;\\\"><p><strong>Valor observado:</strong> 4°C</p><p><strong>Data:</strong> 17/11/2025</p><p>Temperatura mínima prevista é de <strong>4°C</strong>no período entre <strong>04:00 às 06:00</strong>.</p>    </div>    <hr style=\\\"border: 0; border-top: 1px solid #ddd; margin-top: 15px;\\\"></div></div>    </div>    <hr style=\\\"border: 0; border-top: 1px solid #ddd; margin: 30px 0;\\\"><p style=\\\"color: #777; font-size: 12px;\\\">Este é um e-mail automático do CEMPA.</p><p style=\\\"color: #777; font-size: 12px;\\\">Por favor, não responda a este e-mail.</p><div style=\\\"text-align: center; margin-top: 20px;\\\">    <a href=\\\"http://paca.cempa.ufg.br\\\"        style=\\\"background-color: #dc3545; color: white; padding: 10px 20px;       text-decoration: none; border-radius: 5px; display: inline-block;\\\">       Descadastrar ou atualizar preferências    </a></div></body></html>\",\r\n  \"alertas\": [\r\n    {\r\n      \"id\": \"a226bd5d-ec06-4014-bc15-ee67a3ae725e\",\r\n      \"idEvento\": \"dbce7e56-d8d9-4c42-911b-8bdaee7f54b4\",\r\n      \"valor\": 43.033934,\r\n      \"dataGeracao\": \"2025-11-25\",\r\n      \"dataReferencia\": \"2025-11-24\",\r\n      \"idCidade\": \"0fda8ece-f84f-47cf-affe-471159a08c88\",\r\n      \"valorLimite\": 60.0,\r\n      \"unidadeMedida\": \"%\",\r\n      \"diferenca\": -16.966066,\r\n      \"horario\": \"13:30:00\",\r\n      \"segundos\": 59400.0\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{UrlEnvios}}/alerts/test-notification",
+							"host": [
+								"{{UrlEnvios}}"
+							],
+							"path": [
+								"alerts",
+								"test-notification"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth Local",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Verify HTTP 200 status",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Attempt to parse JSON safely",
+							"let isJson = false;",
+							"let body = pm.response.text();",
+							"let data = null;",
+							"",
+							"try {",
+							"    data = pm.response.json();",
+							"    isJson = true;",
+							"} catch (e) {",
+							"    isJson = false;",
+							"}",
+							"",
+							"pm.test(\"Response is valid JSON\", function () {",
+							"    pm.expect(isJson, \"Response body is not valid JSON\").to.be.true;",
+							"});",
+							"",
+							"// When 200 and JSON, ensure token exists and set collection variable",
+							"pm.test(\"Token field exists when status is 200\", function () {",
+							"    if (pm.response.code === 200 && isJson) {",
+							"        pm.expect(data, \"Parsed JSON is null\").to.be.an(\"object\");",
+							"        pm.expect(data).to.have.property(\"token\");",
+							"        const token = data && data.token;",
+							"        pm.expect(token, \"token is empty or missing\").to.be.a(\"string\").and.not.empty;",
+							"        if (token) {",
+							"            pm.collectionVariables.set(\"Token\", token);",
+							"            console.info(\"Collection variable 'Token' was set from login response.\");",
+							"        }",
+							"    } else {",
+							"        // If not 200 or not JSON, make the assertion fail with context",
+							"        pm.expect(pm.response.code, \"Expected HTTP 200\").to.eql(200);",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  //\"email\": \"vinidentres@gmail.com\",\r\n  //\"email\": \"admin@admin.com\",\r\n  \"email\": \"ixf34rxi@gmail.com\",\r\n  \"senha\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/usuarios/login",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"usuarios",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth Local PRD",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Verify HTTP 200 status",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Attempt to parse JSON safely",
+							"let isJson = false;",
+							"let body = pm.response.text();",
+							"let data = null;",
+							"",
+							"try {",
+							"    data = pm.response.json();",
+							"    isJson = true;",
+							"} catch (e) {",
+							"    isJson = false;",
+							"}",
+							"",
+							"pm.test(\"Response is valid JSON\", function () {",
+							"    pm.expect(isJson, \"Response body is not valid JSON\").to.be.true;",
+							"});",
+							"",
+							"// When 200 and JSON, ensure token exists and set collection variable",
+							"pm.test(\"Token field exists when status is 200\", function () {",
+							"    if (pm.response.code === 200 && isJson) {",
+							"        pm.expect(data, \"Parsed JSON is null\").to.be.an(\"object\");",
+							"        pm.expect(data).to.have.property(\"token\");",
+							"        const token = data && data.token;",
+							"        pm.expect(token, \"token is empty or missing\").to.be.a(\"string\").and.not.empty;",
+							"        if (token) {",
+							"            pm.collectionVariables.set(\"Token\", token);",
+							"            console.info(\"Collection variable 'Token' was set from login response.\");",
+							"        }",
+							"    } else {",
+							"        // If not 200 or not JSON, make the assertion fail with context",
+							"        pm.expect(pm.response.code, \"Expected HTTP 200\").to.eql(200);",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"admin@admin.com\",\r\n  \"senha\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase VM}}/usuarios/login",
+					"host": [
+						"{{UrlBase VM}}"
+					],
+					"path": [
+						"usuarios",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar lista cidade",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cidades\": [\r\n    {\"nome\": \"Abadia de Goiás\"},{\"nome\":\"Abadiânia\"},{\"nome\":\"Acreúna\"},{\"nome\":\"Adelândia\"},{\"nome\":\"Água Fria de Goiás\"},{\"nome\":\"Água Limpa\"},{\"nome\":\"Águas Lindas de Goiás\"},{\"nome\":\"Alexânia\"},{\"nome\":\"Aloândia\"},{\"nome\":\"Alto Horizonte\"},{\"nome\":\"Alto Paraíso de Goiás\"},{\"nome\":\"Alvorada do Norte\"},{\"nome\":\"Amaralina\"},{\"nome\":\"Americano do Brasil\"},{\"nome\":\"Amorinópolis\"},{\"nome\":\"Anápolis\"},{\"nome\":\"Anhanguera\"},{\"nome\":\"Anicuns\"},{\"nome\":\"Aparecida de Goiânia\"},{\"nome\":\"Aparecida do Rio Doce\"},{\"nome\":\"Apore\"},{\"nome\":\"Araçu\"},{\"nome\":\"Aragarças\"},{\"nome\":\"Aragoiânia\"},{\"nome\":\"Araguapaz\"},{\"nome\":\"Arenópolis\"},{\"nome\":\"Aruanã\"},{\"nome\":\"Aurilândia\"},{\"nome\":\"Avelinópolis\"},{\"nome\":\"Baliza\"},{\"nome\":\"Barro Alto\"},{\"nome\":\"Bela Vista de Goiás\"},{\"nome\":\"Bom Jardim de Goiás\"},{\"nome\":\"Bom Jesus de Goiás\"},{\"nome\":\"Bonfinópolis\"},{\"nome\":\"Bonópolis\"},{\"nome\":\"Brazabrantes\"},{\"nome\":\"Britânia\"},{\"nome\":\"Buriti Alegre\"},{\"nome\":\"Buriti de Goiás\"},{\"nome\":\"Buritinópolis\"},{\"nome\":\"Cabeceiras\"},{\"nome\":\"Cachoeira Alta\"},{\"nome\":\"Cachoeira de Goiás\"},{\"nome\":\"Cachoeira Dourada\"},{\"nome\":\"Caçu\"},{\"nome\":\"Caiapônia\"},{\"nome\":\"Caldas Novas\"},{\"nome\":\"Caldazinha\"},{\"nome\":\"Campestre de Goiás\"},{\"nome\":\"Campinaçu\"},{\"nome\":\"Campinorte\"},{\"nome\":\"Campo Alegre de Goiás\"},{\"nome\":\"Campo Limpo de Goiás\"},{\"nome\":\"Campos Belos\"},{\"nome\":\"Campos Verdes\"},{\"nome\":\"Carmo do Rio Verde\"},{\"nome\":\"Castelândia\"},{\"nome\":\"Catalão\"},{\"nome\":\"Caturaí\"},{\"nome\":\"Cavalcante\"},{\"nome\":\"Ceres\"},{\"nome\":\"Cezarina\"},{\"nome\":\"Chapadão do Céu\"},{\"nome\":\"Cidade Ocidental\"},{\"nome\":\"Cocalzinho de Goiás\"},{\"nome\":\"Colinas do Sul\"},{\"nome\":\"Córrego do Ouro\"},{\"nome\":\"Corumbá de Goiás\"},{\"nome\":\"Corumbaíba\"},{\"nome\":\"Cristalina\"},{\"nome\":\"Cristianópolis\"},{\"nome\":\"Crixás\"},{\"nome\":\"Cromínia\"},{\"nome\":\"Cumari\"},{\"nome\":\"Damianópolis\"},{\"nome\":\"Damolândia\"},{\"nome\":\"Davinópolis\"},{\"nome\":\"Diorama\"},{\"nome\":\"Divinópolis de Goiás\"},{\"nome\":\"Doverlândia\"},{\"nome\":\"Edealina\"},{\"nome\":\"Edéia\"},{\"nome\":\"Estrela do Norte\"},{\"nome\":\"Faina\"},{\"nome\":\"Fazenda Nova\"},{\"nome\":\"Firminópolis\"},{\"nome\":\"Flores de Goiás\"},{\"nome\":\"Formosa\"},{\"nome\":\"Formoso\"},{\"nome\":\"Gameleira de Goiás\"},{\"nome\":\"Goianápolis\"},{\"nome\":\"Goiandira\"},{\"nome\":\"Goianésia\"},{\"nome\":\"Goiânia\"},{\"nome\":\"Goianira\"},{\"nome\":\"Goiás\"},{\"nome\":\"Goiatuba\"},{\"nome\":\"Gouvelândia\"},{\"nome\":\"Guapó\"},{\"nome\":\"Guaraíta\"},{\"nome\":\"Guarani de Goiás\"},{\"nome\":\"Guarinos\"},{\"nome\":\"Heitoraí\"},{\"nome\":\"Hidrolândia\"},{\"nome\":\"Hidrolina\"},{\"nome\":\"Iaciara\"},{\"nome\":\"Inaciolândia\"},{\"nome\":\"Indiara\"},{\"nome\":\"Inhumas\"},{\"nome\":\"Ipameri\"},{\"nome\":\"Ipiranga de Goiás\"},{\"nome\":\"Iporá\"},{\"nome\":\"Israelândia\"},{\"nome\":\"Itaberaí\"},{\"nome\":\"Itaguari\"},{\"nome\":\"Itaguaru\"},{\"nome\":\"Itajá\"},{\"nome\":\"Itapaci\"},{\"nome\":\"Itapirapuã\"},{\"nome\":\"Itapuranga\"},{\"nome\":\"Itarumã\"},{\"nome\":\"Itauçu\"},{\"nome\":\"Itumbiara\"},{\"nome\":\"Ivolândia\"},{\"nome\":\"Jandaia\"},{\"nome\":\"Jaraguá\"},{\"nome\":\"Jataí\"},{\"nome\":\"Jaupaci\"},{\"nome\":\"Jesúpolis\"},{\"nome\":\"Joviânia\"},{\"nome\":\"Jussara\"},{\"nome\":\"Lagoa Santa\"},{\"nome\":\"Leopoldo de Bulhões\"},{\"nome\":\"Luziânia\"},{\"nome\":\"Mairipotaba\"},{\"nome\":\"Mambaí\"},{\"nome\":\"Mara Rosa\"},{\"nome\":\"Marzagão\"},{\"nome\":\"Matrinchã\"},{\"nome\":\"Maurilândia\"},{\"nome\":\"Mimoso de Goiás\"},{\"nome\":\"Minaçu\"},{\"nome\":\"Mineiros\"},{\"nome\":\"Moiçorá\"},{\"nome\":\"Monte Alegre de Goiás\"},{\"nome\":\"Montes Claros de Goiás\"},{\"nome\":\"Montividiu\"},{\"nome\":\"Montividiu do Norte\"},{\"nome\":\"Morrinhos\"},{\"nome\":\"Morro Agudo de Goiás\"},{\"nome\":\"Mossâmedes\"},{\"nome\":\"Mozarlândia\"},{\"nome\":\"Mundo Novo\"},{\"nome\":\"Mutunópolis\"},{\"nome\":\"Nazário\"},{\"nome\":\"Nerópolis\"},{\"nome\":\"Niquelândia\"},{\"nome\":\"Nova América\"},{\"nome\":\"Nova Aurora\"},{\"nome\":\"Nova Crixás\"},{\"nome\":\"Nova Glória\"},{\"nome\":\"Nova Iguaçu de Goiás\"},{\"nome\":\"Nova Roma\"},{\"nome\":\"Nova Veneza\"},{\"nome\":\"Novo Brasil\"},{\"nome\":\"Novo Gama\"},{\"nome\":\"Novo Planalto\"},{\"nome\":\"Orizona\"},{\"nome\":\"Ouro Verde de Goiás\"},{\"nome\":\"Ouvidor\"},{\"nome\":\"Padre Bernardo\"},{\"nome\":\"Palestina de Goiás\"},{\"nome\":\"Palmeiras de Goiás\"},{\"nome\":\"Palmelo\"},{\"nome\":\"Palminópolis\"},{\"nome\":\"Panamá\"},{\"nome\":\"Paranaiguara\"},{\"nome\":\"Paraúna\"},{\"nome\":\"Perolândia\"},{\"nome\":\"Petrolina de Goiás\"},{\"nome\":\"Pilar de Goiás\"},{\"nome\":\"Piracanjuba\"},{\"nome\":\"Piranhas\"},{\"nome\":\"Pirenópolis\"},{\"nome\":\"Pires do Rio\"},{\"nome\":\"Planaltina\"},{\"nome\":\"Pontalina\"},{\"nome\":\"Porangatu\"},{\"nome\":\"Porteirão\"},{\"nome\":\"Portelândia\"},{\"nome\":\"Posse\"},{\"nome\":\"Professor Jamil\"},{\"nome\":\"Quirinópolis\"},{\"nome\":\"Região Metropolitana de Goiânia\"},{\"nome\":\"Rialma\"},{\"nome\":\"Rianápolis\"},{\"nome\":\"Rio Quente\"},{\"nome\":\"Rio Verde\"},{\"nome\":\"Rio Verde Região Leste\"},{\"nome\":\"Rio Verde Região Norte\"},{\"nome\":\"Rio Verde Região Sul\"},{\"nome\":\"Rubiataba\"},{\"nome\":\"Sanclerlândia\"},{\"nome\":\"Santa Bárbara de Goiás\"},{\"nome\":\"Santa Cruz de Goiás\"},{\"nome\":\"Santa Fé de Goiás\"},{\"nome\":\"Santa Helena de Goiás\"},{\"nome\":\"Santa Isabel\"},{\"nome\":\"Santa Rita do Araguaia\"},{\"nome\":\"Santa Rita do Novo Destino\"},{\"nome\":\"Santa Rosa de Goiás\"},{\"nome\":\"Santa Tereza de Goiás\"},{\"nome\":\"Santa Terezinha de Goiás\"},{\"nome\":\"Santo Antônio da Barra\"},{\"nome\":\"Santo Antônio de Goiás\"},{\"nome\":\"Santo Antônio do Descoberto\"},{\"nome\":\"São Domingos\"},{\"nome\":\"São Francisco de Goiás\"},{\"nome\":\"São João d'Aliança\"},{\"nome\":\"São João da Paraúna\"},{\"nome\":\"São Luís de Montes Belos\"},{\"nome\":\"São Luiz do Norte\"},{\"nome\":\"São Miguel do Araguaia\"},{\"nome\":\"São Miguel do Passa Quatro\"},{\"nome\":\"São Patrício\"},{\"nome\":\"São Simão\"},{\"nome\":\"Senador Canedo\"},{\"nome\":\"Serranópolis\"},{\"nome\":\"Silvânia\"},{\"nome\":\"Simolândia\"},{\"nome\":\"Sítio d'Abadia\"},{\"nome\":\"Taquaral de Goiás\"},{\"nome\":\"Teresina de Goiás\"},{\"nome\":\"Terezópolis de Goiás\"},{\"nome\":\"Três Ranchos\"},{\"nome\":\"Trindade\"},{\"nome\":\"Trombas\"},{\"nome\":\"Turvânia\"},{\"nome\":\"Turvelândia\"},{\"nome\":\"Uirapuru\"},{\"nome\":\"Uruaçu\"},{\"nome\":\"Uruaçú\"},{\"nome\":\"Urutaí\"},{\"nome\":\"Valparaíso de Goiás\"},{\"nome\":\"Várjão\"},{\"nome\":\"Vianópolis\"},{\"nome\":\"Vicentinópolis\"},{\"nome\":\"Vila Boa\"},{\"nome\":\"Vila Propício\"}\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/cidades/bulk",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"cidades",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar canal Whatsapp",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeCanal\": \"Whatsapp\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/canais",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"canais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar canal Email",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeCanal\": \"Email\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/canais",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"canais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar evento chuva",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeEvento\": \"Chuva\",\r\n  \"personalizavel\": false,\r\n  \"horario\": \"2022-03-10T12:15:50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/eventos",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar evento vento",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeEvento\": \"Vento\",\r\n  \"personalizavel\": false,\r\n  \"horario\": \"2022-03-10T12:15:50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/eventos",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar evento temp alta",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeEvento\": \"Temperatura Alta\",\r\n  \"personalizavel\": false,\r\n  \"horario\": \"2022-03-10T12:15:50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/eventos",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar evento temp baixa",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeEvento\": \"Temperatura Baixa\",\r\n  \"personalizavel\": false,\r\n  \"horario\": \"2022-03-10T12:15:50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/eventos",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar evento umidade baixa",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeEvento\": \"Umidade Baixa\",\r\n  \"personalizavel\": true,\r\n  \"horario\": \"2022-03-10T12:15:50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/eventos",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar avisos em lote",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"avisos\": [\r\n        {\r\n            \"idEvento\": \"e737c9ea-7932-424e-9494-4d86bb38db1e\",\r\n            \"idCidade\": \"0025f0c9-2e0c-4072-bc5b-19b73870e570\",\r\n            \"valor\": 16.950000000000045,\r\n            \"valorLimite\": 20.3,\r\n            \"diferenca\": -3.3499999999999552,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-15\",\r\n            \"unidadeMedida\": \"\\u00b0C\",\r\n            \"horario\": \"03:00:00\",\r\n            \"segundos\": 108000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"0025f0c9-2e0c-4072-bc5b-19b73870e570\",\r\n            \"valor\": 53.02494957162642,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.975050428373578,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"e737c9ea-7932-424e-9494-4d86bb38db1e\",\r\n            \"idCidade\": \"adace2a5-49bd-4634-9757-9f92b6a7a879\",\r\n            \"valor\": 17.150000000000034,\r\n            \"valorLimite\": 20.6,\r\n            \"diferenca\": -3.4499999999999673,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-15\",\r\n            \"unidadeMedida\": \"\\u00b0C\",\r\n            \"horario\": \"05:30:00\",\r\n            \"segundos\": 117000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"adace2a5-49bd-4634-9757-9f92b6a7a879\",\r\n            \"valor\": 44.697319312505954,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -15.302680687494046,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"e737c9ea-7932-424e-9494-4d86bb38db1e\",\r\n            \"idCidade\": \"47194031-91c2-45d4-8b41-4c687681cbc5\",\r\n            \"valor\": 16.650000000000034,\r\n            \"valorLimite\": 19.9,\r\n            \"diferenca\": -3.2499999999999645,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-15\",\r\n            \"unidadeMedida\": \"\\u00b0C\",\r\n            \"horario\": \"05:30:00\",\r\n            \"segundos\": 117000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"47194031-91c2-45d4-8b41-4c687681cbc5\",\r\n            \"valor\": 56.73040785446114,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.2695921455388586,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"6e15bf2f-e48f-440d-b397-1aced3d8f917\",\r\n            \"idCidade\": \"3bd5f1d9-d6f4-45a3-8494-ffb714bb927d\",\r\n            \"valor\": 33.25,\r\n            \"valorLimite\": 28.3,\r\n            \"diferenca\": 4.949999999999999,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"\\u00b0C\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"e737c9ea-7932-424e-9494-4d86bb38db1e\",\r\n            \"idCidade\": \"3bd5f1d9-d6f4-45a3-8494-ffb714bb927d\",\r\n            \"valor\": 15.75,\r\n            \"valorLimite\": 19.2,\r\n            \"diferenca\": -3.4499999999999993,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-15\",\r\n            \"unidadeMedida\": \"\\u00b0C\",\r\n            \"horario\": \"05:30:00\",\r\n            \"segundos\": 117000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"3bd5f1d9-d6f4-45a3-8494-ffb714bb927d\",\r\n            \"valor\": 59.53600022839822,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -0.4639997716017774,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"e74426b0-bf7d-4be0-9aa5-094e9a4e9339\",\r\n            \"valor\": 55.90052619336603,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.0994738066339735,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"49db6a01-2592-4285-9083-4f2a41ae8600\",\r\n            \"idCidade\": \"e74426b0-bf7d-4be0-9aa5-094e9a4e9339\",\r\n            \"valor\": 20.12,\r\n            \"valorLimite\": 15.0,\r\n            \"diferenca\": 5.120000000000001,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-15\",\r\n            \"unidadeMedida\": \"mm\",\r\n            \"horario\": \"08:00:00\",\r\n            \"segundos\": 126000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"d9864396-b2c2-4a7c-a1fe-526ce25b9aab\",\r\n            \"valor\": 52.80523603391799,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.194763966082007,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"496b9461-2700-4859-bd82-261a3088b5a5\",\r\n            \"valor\": 50.62314756304937,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.376852436950628,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"49db6a01-2592-4285-9083-4f2a41ae8600\",\r\n            \"idCidade\": \"496b9461-2700-4859-bd82-261a3088b5a5\",\r\n            \"valor\": 21.41,\r\n            \"valorLimite\": 15.0,\r\n            \"diferenca\": 6.41,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-15\",\r\n            \"unidadeMedida\": \"mm\",\r\n            \"horario\": \"08:00:00\",\r\n            \"segundos\": 126000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"4b6333e5-2707-4a45-83c9-2228039d0c43\",\r\n            \"valor\": 52.97352682390053,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.026473176099472,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"27e30d8d-27ee-4f95-9b6d-ceff54c8162a\",\r\n            \"valor\": 56.29498858869933,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.705011411300667,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"16:00:00\",\r\n            \"segundos\": 68400.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"b01e3ec0-1cd8-4309-bfa8-73365f7e04c2\",\r\n            \"valor\": 59.10778374807422,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -0.892216251925781,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"827c326d-583d-49d7-8ac3-04161957e71b\",\r\n            \"valor\": 52.99924669785331,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.000753302146691,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"3872ac68-435b-4030-b93e-7468fa50ae59\",\r\n            \"valor\": 58.66783045747509,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.332169542524909,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"c02116c9-7c23-4c60-82a1-37ee336058f6\",\r\n            \"valor\": 48.0577441541928,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -11.942255845807203,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"f315f9c1-8703-472d-884f-113d1e88fcaf\",\r\n            \"valor\": 50.75395767431699,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.246042325683007,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"1001d1a4-2f52-4607-b32d-f2cb8c5e6f55\",\r\n            \"valor\": 51.621766170763586,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.378233829236414,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"5a1e19b7-11f4-4c9c-acbc-41520635dc2c\",\r\n            \"valor\": 52.97806425701948,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.021935742980517,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"91b923bc-117a-4465-8d17-22ae9781f09f\",\r\n            \"valor\": 57.996801003786125,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.003198996213875,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"9a8fd941-4e92-4a7d-a363-37be06daafa3\",\r\n            \"valor\": 45.073392020288836,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -14.926607979711164,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"c5aae93e-3988-4e72-a176-d96a5a8c5283\",\r\n            \"valor\": 53.61598847859387,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.38401152140613,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"f0a15264-eabb-4875-a127-00eedf3b8043\",\r\n            \"valor\": 55.15743966922763,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.842560330772372,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"db4f6ce1-2d8a-4520-b46c-b329f77ca865\",\r\n            \"valor\": 42.73536100712291,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -17.26463899287709,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"a6ddce53-bced-465b-aab8-bb9f84537145\",\r\n            \"valor\": 56.37671861846327,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.623281381536728,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"7e7fd7e5-b1b7-4850-b324-529293820e62\",\r\n            \"valor\": 51.01784832127113,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.982151678728869,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"0e68185b-dbdd-4031-8f9d-f9c772c2d543\",\r\n            \"valor\": 47.04457279526539,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -12.955427204734612,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"49db6a01-2592-4285-9083-4f2a41ae8600\",\r\n            \"idCidade\": \"0e68185b-dbdd-4031-8f9d-f9c772c2d543\",\r\n            \"valor\": 23.33,\r\n            \"valorLimite\": 15.0,\r\n            \"diferenca\": 8.329999999999998,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-15\",\r\n            \"unidadeMedida\": \"mm\",\r\n            \"horario\": \"08:00:00\",\r\n            \"segundos\": 126000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"d0b0a7b7-46ac-4e76-964a-730345d3c8fb\",\r\n            \"valor\": 57.4680127157053,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.5319872842947007,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"c77998cf-751d-4ec9-a6d5-51b9604d958a\",\r\n            \"valor\": 49.701141462939326,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -10.298858537060674,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"e786471c-0cb0-4327-b935-38ef66e1c239\",\r\n            \"valor\": 57.419202604516414,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.580797395483586,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"2b8af631-e897-40f4-bc21-8d2e9fbf58e0\",\r\n            \"valor\": 53.08034928831372,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.91965071168628,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"0296a26c-5792-46d6-833c-f5cc926f896c\",\r\n            \"valor\": 58.06793395136306,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.9320660486369405,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"41795f82-572b-4e65-be83-0722580d8c51\",\r\n            \"valor\": 50.31094510293631,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.689054897063691,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"20187748-bb81-4350-b126-0a434b8be3fc\",\r\n            \"valor\": 55.727009926213086,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.272990073786914,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"2076baf2-d5f9-4399-b692-0083fdabcd33\",\r\n            \"valor\": 44.834892698896375,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -15.165107301103625,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"42447868-9c33-4789-b082-0bb06f0b337c\",\r\n            \"valor\": 51.40842604771117,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.591573952288833,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"fa41affa-9672-4c6d-8d4a-2db137110600\",\r\n            \"valor\": 50.83206442187998,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.167935578120023,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"16:00:00\",\r\n            \"segundos\": 68400.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"a63bcb38-0ae9-4fff-b58f-0a1fef982f14\",\r\n            \"valor\": 58.04824529158288,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.9517547084171198,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"8a0f7184-6740-4ff9-bf6b-718c068712b4\",\r\n            \"valor\": 58.620243066753694,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.3797569332463056,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"7afaa96f-c5d4-48d8-82d5-a5186d5865af\",\r\n            \"valor\": 50.44204198962632,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.557958010373682,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"71863132-2e0f-4973-863a-ce4d15b3d73d\",\r\n            \"valor\": 53.484703690963045,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.515296309036955,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"8470cb4f-f697-4eb7-b790-5e65e96d99fa\",\r\n            \"valor\": 58.66783045747509,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.332169542524909,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"e51c4b43-b65d-4a1c-92a4-ac82faae7475\",\r\n            \"valor\": 52.48083288052586,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.51916711947414,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"635cf241-26e2-40df-9a50-036125c68354\",\r\n            \"valor\": 55.62747634597597,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.372523654024029,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"c1cfc46a-0961-4953-8e74-4d2627290414\",\r\n            \"valor\": 58.28515982048869,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.714840179511313,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"a80018f1-82c1-430a-b4c9-e57d6293750d\",\r\n            \"valor\": 58.04824529158288,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.9517547084171198,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"13:30:00\",\r\n            \"segundos\": 59400.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"67a86478-8125-4642-9c98-ad8159f7e4e4\",\r\n            \"valor\": 52.50651716463693,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.493482835363068,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"3b286044-0c71-4c60-a7ca-1b207d1225c1\",\r\n            \"valor\": 50.989205543454794,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.010794456545206,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"ff22fe5f-f87c-401c-aaf2-3eca2150882d\",\r\n            \"valor\": 57.171350960551656,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.8286490394483437,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"770c0f4d-3801-40a7-b6fe-54b786e96eef\",\r\n            \"valor\": 51.07432543831544,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.92567456168456,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"5000926a-437a-40a6-a41b-921c5f29b198\",\r\n            \"valor\": 44.9521620956657,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -15.047837904334301,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"3ffce03d-500d-4867-80da-997807d86193\",\r\n            \"valor\": 52.59990517242825,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.400094827571749,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"b4d8a3af-8621-4305-8eab-466a7d5e2bba\",\r\n            \"valor\": 51.75955477151067,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.240445228489328,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"2189ff79-0351-4a89-8897-5730e536c7c8\",\r\n            \"valor\": 54.76371523229522,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.236284767704781,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"7a873481-0ad9-4cff-a85f-ed3cdacb6f77\",\r\n            \"valor\": 49.99465601907869,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -10.00534398092131,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"446cc9cf-6217-4223-8eb8-e958dc813b67\",\r\n            \"valor\": 56.525061201452374,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.474938798547626,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"b4483814-0b8f-472f-a5c0-27d58f0091c9\",\r\n            \"valor\": 52.844672164707106,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.155327835292894,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"d52950a2-cec8-4fb2-b2c3-1952be67ff0e\",\r\n            \"valor\": 54.99026760761351,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.009732392386489,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"71bcd394-5d1b-4279-a107-bdde4314da76\",\r\n            \"valor\": 53.10587848668246,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.894121513317543,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"68c8bc36-c800-4541-85fd-ffdaed9c7ed0\",\r\n            \"valor\": 58.73908054734262,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.260919452657383,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"bd19d61a-82b9-4bc1-95ef-47b1f62b0afe\",\r\n            \"valor\": 52.11949698711717,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.8805030128828335,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"17c5c5cf-4321-42eb-a95f-4449d1cae82c\",\r\n            \"valor\": 58.91007982370504,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.0899201762949602,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"485e6dbb-0d34-48f1-a047-3d04d229e9e2\",\r\n            \"valor\": 56.62360515517578,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.376394844824219,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"7bbb7223-442b-44be-a1f0-489fab19e8f9\",\r\n            \"valor\": 55.190573955724176,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.809426044275824,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"456357cf-fed3-49ab-8650-9d8620597e4d\",\r\n            \"valor\": 56.02496079479919,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.975039205200808,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"c4a5d805-4e16-47a0-80fb-6573eba3eb41\",\r\n            \"valor\": 52.2611765519374,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.738823448062597,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"28c18362-b868-4383-9796-02c13b3f4e74\",\r\n            \"valor\": 55.36493802623487,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.635061973765133,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"b4fa12bb-e4d5-4b58-8897-c494fbbae1ad\",\r\n            \"valor\": 51.78546970387031,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.214530296129688,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"b1c3d53c-8962-463b-9a04-c9646e5e93c7\",\r\n            \"valor\": 59.14650834700318,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -0.8534916529968228,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"ee612ed5-cb94-4002-bf08-438ddfa1abdc\",\r\n            \"valor\": 50.258392797150464,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.741607202849536,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"94f4ce03-32ef-43ca-af1b-33ea2f8961f2\",\r\n            \"valor\": 58.917476117677396,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.0825238823226044,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"d3e44fed-efd0-4539-9ecb-339d30205b87\",\r\n            \"valor\": 53.4849732542976,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.5150267457024,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"d6389457-c507-4f81-8736-00725d5abe8a\",\r\n            \"valor\": 55.87466710209963,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.125332897900371,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"19a23345-dc0a-46fd-bcc7-5311bb617c45\",\r\n            \"valor\": 57.13506453733538,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.8649354626646186,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"d72b2032-9545-47a1-bd65-71056a30b141\",\r\n            \"valor\": 50.62314756304937,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.376852436950628,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"eb7ffcec-ce44-4693-b680-7a7e09178131\",\r\n            \"valor\": 54.59908508854719,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.4009149114528086,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"98a5ee5a-efc9-43c8-a54d-ed1f80aeda0a\",\r\n            \"valor\": 53.407470066027244,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.592529933972756,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"3aeddde7-27f7-4059-af39-5d66aa536c3a\",\r\n            \"valor\": 51.98268471557679,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.017315284423212,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"13b567a0-6997-4926-9c5a-6583aff3001a\",\r\n            \"valor\": 57.741977449518735,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.2580225504812645,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"ec373597-0011-4984-9dba-c4f546dc1eea\",\r\n            \"valor\": 53.02494957162642,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.975050428373578,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"5bf541db-bae5-49be-87f4-ec836df1b15c\",\r\n            \"valor\": 52.97352682390053,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.026473176099472,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"959b7657-92fa-4781-9c5e-c2613852ac92\",\r\n            \"valor\": 53.86753535864448,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.132464641355519,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"f2d42d9e-61ef-466b-8375-f0d13a5fac85\",\r\n            \"valor\": 53.96890338404705,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.031096615952947,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"98c317eb-4955-4fb4-98c2-6ff6dc839055\",\r\n            \"valor\": 48.65161987182816,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -11.34838012817184,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"6712f0ef-25e0-4798-84ab-839c42263c97\",\r\n            \"valor\": 56.05048997778227,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.94951002221773,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"2be76c7d-2415-48f7-ba48-8bb271402711\",\r\n            \"valor\": 55.04044776228666,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.959552237713339,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"48ae232a-6437-4db3-9be8-add7db866d82\",\r\n            \"valor\": 57.95224011963241,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.047759880367593,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"0b3732c6-e0ef-495e-8b7b-e2af3d0b5762\",\r\n            \"valor\": 52.300294776890034,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.699705223109966,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"16:00:00\",\r\n            \"segundos\": 68400.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"ead17967-dbcc-41ca-b90a-5d5259435d95\",\r\n            \"valor\": 57.54895422109618,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.4510457789038185,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"0a940384-b2cc-4734-a29b-44911a42326f\",\r\n            \"valor\": 47.84650152976141,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -12.153498470238588,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"78d22cf2-8915-4fbf-930f-8e320c2e4660\",\r\n            \"valor\": 57.20847282041753,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.7915271795824665,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"17a4452d-cc26-4da8-a9e6-f9fff96f9231\",\r\n            \"valor\": 55.389778514116486,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.610221485883514,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"16:00:00\",\r\n            \"segundos\": 68400.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"b2d77d98-4f12-42cf-8bad-304211f6a31b\",\r\n            \"valor\": 52.48083288052586,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.51916711947414,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"16:00:00\",\r\n            \"segundos\": 68400.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"0a1f9e2a-068c-49e1-b451-c0e7192bf96d\",\r\n            \"valor\": 49.93717713105093,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -10.06282286894907,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"43321795-d3f1-401e-9881-d2ae03ef0f5f\",\r\n            \"valor\": 51.67352330307513,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.326476696924871,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"545bb7d4-7213-4161-b3eb-8d0559c7549d\",\r\n            \"valor\": 53.994202870368945,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.0057971296310555,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"aecf9c34-b343-4b71-bc94-d64393142531\",\r\n            \"valor\": 42.40125551129569,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -17.598744488704313,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"936f4b65-dbb8-413b-8723-02a6d46aa347\",\r\n            \"valor\": 52.574163257898476,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.425836742101524,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"4954457b-2b4d-49f0-a066-53e9d1e8b9ca\",\r\n            \"valor\": 59.81380142647704,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -0.1861985735229581,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"5636e058-12f4-420b-a823-1afd07177e79\",\r\n            \"valor\": 52.04370796634707,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.956292033652929,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"ba592e8a-0ac9-43e1-9611-54bdbc865c96\",\r\n            \"valor\": 47.65708341510255,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -12.342916584897452,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"1e43ecd9-b6ad-4510-a262-406fa1cb07db\",\r\n            \"valor\": 54.02447675740364,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.97552324259636,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"397c4a63-4c00-424d-9193-bd8752a00ca9\",\r\n            \"valor\": 52.45513190629239,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.544868093707613,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"49db6a01-2592-4285-9083-4f2a41ae8600\",\r\n            \"idCidade\": \"397c4a63-4c00-424d-9193-bd8752a00ca9\",\r\n            \"valor\": 23.33,\r\n            \"valorLimite\": 15.0,\r\n            \"diferenca\": 8.329999999999998,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-15\",\r\n            \"unidadeMedida\": \"mm\",\r\n            \"horario\": \"08:00:00\",\r\n            \"segundos\": 126000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"1cbb19fa-42b4-473b-b4cc-63426d364848\",\r\n            \"valor\": 51.86311501280832,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.136884987191678,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"734eb762-bc8a-4dc2-bec4-7174d396cdf5\",\r\n            \"valor\": 57.438030358489655,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.561969641510345,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"2b443189-2388-47c8-a0e9-440db04a2628\",\r\n            \"valor\": 57.14700296491569,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.8529970350843072,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"3367a162-5abf-4ec5-a303-13479a1169fa\",\r\n            \"valor\": 50.518298187005826,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.481701812994174,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"1e8d7e29-583b-47e5-b69a-0db0cee0a128\",\r\n            \"valor\": 57.996801003786125,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.003198996213875,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"f4e5708e-e544-416f-9633-a22ddca26c87\",\r\n            \"valor\": 52.04370796634707,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.956292033652929,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"9c9d0c68-3a9d-4d1a-9f03-274b4265fcc2\",\r\n            \"valor\": 53.66202059019171,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.337979409808291,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"4d4f812c-56e5-45ba-acf5-619b76b0f514\",\r\n            \"valor\": 56.62360515517578,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.376394844824219,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"886291f5-a7d8-4da0-9489-9f4f5f7e2534\",\r\n            \"valor\": 59.367615160964036,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -0.6323848390359643,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"01800edc-f84c-411a-81e5-35d713ef417e\",\r\n            \"valor\": 48.43348518903001,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -11.566514810969991,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"4af87f0d-d10a-4430-b3a3-e7679024af47\",\r\n            \"valor\": 59.0048610282601,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -0.9951389717398982,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"271f7faf-c595-4935-baa3-2975addc401a\",\r\n            \"valor\": 52.36391401027897,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.636085989721032,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"33a5dd01-4c8e-4841-8634-07914ee237a1\",\r\n            \"valor\": 53.820783534639816,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.179216465360184,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"1ad60d06-bba8-4ee2-a555-fd2482d33bf6\",\r\n            \"valor\": 51.12236426603821,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.877635733961789,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"79794de8-9370-4e4f-bead-42841ec754f7\",\r\n            \"valor\": 57.09825460904875,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.9017453909512483,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"dad49b78-ab24-4858-9d81-48af1c9a7421\",\r\n            \"valor\": 58.40523242600416,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.5947675739958385,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"202b4be3-68ca-464a-9eab-37a3c8ea7b01\",\r\n            \"valor\": 54.22113475140635,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.778865248593647,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"3b84d96b-0eca-4d79-a88a-b4aeea41992a\",\r\n            \"valor\": 58.7627956936038,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.237204306396201,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"6f75fbc7-05fc-4c4b-856a-a9c8581a731b\",\r\n            \"valor\": 55.776672587736854,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.223327412263146,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"efacc707-d17b-47f8-90a4-64f868828d49\",\r\n            \"valor\": 50.62314756304937,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.376852436950628,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"8f34eb30-5e3d-4204-8c65-432ad3bb5463\",\r\n            \"valor\": 50.675474441434886,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.324525558565114,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"69ab6ed5-fada-43b7-b85e-d8ea271c1330\",\r\n            \"valor\": 46.348570059650264,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -13.651429940349736,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"e1f62f8e-8a19-4a58-8d85-d0fd0582ec57\",\r\n            \"valor\": 50.18440022824143,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.81559977175857,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"86935e47-85b0-4dd8-87db-a4d0d88ced3b\",\r\n            \"valor\": 57.11213807118946,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.887861928810537,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"16:00:00\",\r\n            \"segundos\": 68400.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"076faf36-aad0-4566-967d-74087254c47a\",\r\n            \"valor\": 53.02494957162642,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.975050428373578,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"012b36c5-56fa-48b5-9267-c9bbe452dc8a\",\r\n            \"valor\": 51.33592200633632,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.664077993663682,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"a066f1e6-aab8-4b1a-9b4d-1db0a5a791d2\",\r\n            \"valor\": 51.04130280189722,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.958697198102783,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"b4842482-f760-4190-a7bb-ef992d35441d\",\r\n            \"valor\": 51.73362324599977,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.266376754000227,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"db04033d-018c-455d-a70b-d709569f8234\",\r\n            \"valor\": 45.868196986806105,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -14.131803013193895,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"9622f643-db21-40d7-8d2c-5855000ea0a4\",\r\n            \"valor\": 52.10657214095319,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.89342785904681,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"16:00:00\",\r\n            \"segundos\": 68400.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"e26a9e23-f479-4802-8a5c-5ea21897ff03\",\r\n            \"valor\": 56.76397077132158,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.2360292286784187,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"4fbd7a28-7945-4311-bdfb-0b1ecf0a2e98\",\r\n            \"valor\": 57.31707309108683,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.682926908913167,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"83d12297-975b-4fa9-9628-b828a920c19a\",\r\n            \"valor\": 47.57719710305291,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -12.42280289694709,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"309edc20-8c19-431e-bd01-3e344d19c987\",\r\n            \"valor\": 58.48007992599818,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.519920074001817,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"7fe8b9af-edc4-4e9a-b252-c0f01019c302\",\r\n            \"valor\": 59.865637121096704,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -0.13436287890329623,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"1a847d3c-50de-4381-acdf-68608f1d0564\",\r\n            \"valor\": 52.18394915772744,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.81605084227256,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"0ca54405-491c-47b0-9f87-cf5ea08e2eaa\",\r\n            \"valor\": 51.77684000443723,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.223159995562767,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"6bc7b5d7-ea1f-4fc6-a8b3-074aefa37614\",\r\n            \"valor\": 46.00467212109814,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -13.995327878901861,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"163c6f60-fd07-444f-a65a-818ab5c83b09\",\r\n            \"valor\": 56.44214196552907,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.5578580344709323,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"13:30:00\",\r\n            \"segundos\": 59400.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"9ccb7526-6b89-4f3f-96da-fc90db0e5346\",\r\n            \"valor\": 54.73832764189213,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.261672358107873,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"3dea238c-916f-4ca4-8725-128d24df6656\",\r\n            \"valor\": 58.19173137003298,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.8082686299670172,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"9c3427e8-18c1-4c6b-b143-ce81b6b60726\",\r\n            \"valor\": 54.49794421068118,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.502055789318817,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"7828f8ec-4efe-48e0-85ed-e74278254ba6\",\r\n            \"valor\": 58.93380140491482,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.0661985950851829,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"a1871571-cd42-41d2-af54-e1909dc466cc\",\r\n            \"valor\": 50.36343249915036,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.636567500849637,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"2313b043-3d3e-4296-9c8d-ad42ea78162c\",\r\n            \"valor\": 42.6325231271005,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -17.367476872899502,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"f7bf0ef6-7b55-4796-824a-6add261f8f40\",\r\n            \"valor\": 56.53989963223231,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.460100367767687,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"5a8e8dcd-007e-4f55-95bb-ee334ceffe48\",\r\n            \"valor\": 53.43302344904539,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.566976550954607,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"88035212-7182-4ffd-894d-7260ce2c0d68\",\r\n            \"valor\": 54.91349590108374,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.086504098916258,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"87779935-b049-4593-8da6-447bd592259a\",\r\n            \"valor\": 56.27304138344068,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.7269586165593225,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"fc654256-4464-4d90-ad82-cd7cb1545737\",\r\n            \"valor\": 42.243198894840674,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -17.756801105159326,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"4eab92df-4586-4baa-b21c-035a834c6800\",\r\n            \"valor\": 49.91521747772316,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -10.08478252227684,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"dc63df72-8a4a-4455-943c-da7b1df1640a\",\r\n            \"valor\": 52.44520128304917,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.5547987169508275,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"37235eb2-b97e-4075-a798-810b6c49f8b4\",\r\n            \"valor\": 56.0995690989598,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.9004309010402025,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"d3ce4ff3-47bc-4ab4-ad5d-fcfa2fb2db44\",\r\n            \"valor\": 54.120445625293826,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.879554374706174,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"653eea1a-7378-47c7-90e3-8f06c5756496\",\r\n            \"valor\": 59.66207848529606,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -0.33792151470394316,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"21a3e00d-a8bc-4758-978d-ea98841bb6a4\",\r\n            \"valor\": 58.40456564653695,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.5954343534630482,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"0159a0f6-0dcb-4612-8b74-54e638b01ee4\",\r\n            \"valor\": 59.79529274057729,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -0.20470725942271173,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"bb0da96f-5e6b-4039-aca3-9de8220a37e2\",\r\n            \"valor\": 52.79841649054866,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.201583509451339,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"968a760c-d65e-4119-b4b9-6b5a80b26e72\",\r\n            \"valor\": 57.492391248733696,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.5076087512663037,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"4ea13ce9-5d52-4607-9510-7029ef00da87\",\r\n            \"valor\": 50.31094510293631,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.689054897063691,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"993af5c8-7f31-44b8-a58b-486b6d7750bd\",\r\n            \"valor\": 50.10565169426518,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.894348305734823,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"49db6a01-2592-4285-9083-4f2a41ae8600\",\r\n            \"idCidade\": \"993af5c8-7f31-44b8-a58b-486b6d7750bd\",\r\n            \"valor\": 19.16,\r\n            \"valorLimite\": 15.0,\r\n            \"diferenca\": 4.16,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-15\",\r\n            \"unidadeMedida\": \"mm\",\r\n            \"horario\": \"08:00:00\",\r\n            \"segundos\": 126000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"61de670b-05da-45e3-9220-d5800720a2ca\",\r\n            \"valor\": 58.28515982048869,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.714840179511313,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"a844b398-f146-4d99-bab8-74ff2b866388\",\r\n            \"valor\": 41.45918105607835,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -18.54081894392165,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"8aab6297-c6e2-4629-a5fb-88e1c48d0071\",\r\n            \"valor\": 57.97092456015985,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.029075439840149,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"0f075d62-c956-4bf8-84c0-17179339b93e\",\r\n            \"valor\": 54.107550762367055,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.892449237632945,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"ff368167-7853-4610-a719-b410a2f349ed\",\r\n            \"valor\": 50.57075549435006,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.42924450564994,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"d7fa975e-bc60-4b66-876b-037a22236814\",\r\n            \"valor\": 54.75027844661676,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.249721553383239,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"eaa29b14-7363-4a1a-bca4-6ec5c6411e69\",\r\n            \"valor\": 56.297753151676865,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.702246848323135,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"cfdfb0f7-d0e4-4f14-b346-4f65f11ab64c\",\r\n            \"valor\": 58.42839453146432,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.5716054685356795,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"f5925375-499a-456d-a6e4-b67930a8044d\",\r\n            \"valor\": 53.08034928831372,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.91965071168628,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"16:00:00\",\r\n            \"segundos\": 68400.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"05418f9e-bdcb-4276-95fa-e4b11bde9188\",\r\n            \"valor\": 55.282812498503674,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.717187501496326,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"ce50877c-5d68-40a7-bfe6-fc9219030b27\",\r\n            \"valor\": 51.09333469916505,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.906665300834952,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"d340225d-9822-4e5c-b737-95bff6df99f5\",\r\n            \"valor\": 49.15852544592184,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -10.841474554078161,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"8f41e8e4-0981-4fd8-804f-9a1874d44e0b\",\r\n            \"valor\": 50.07936992433433,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.92063007566567,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"52dda6ac-a591-473d-b7d6-6d844626a3d9\",\r\n            \"valor\": 54.45368745120766,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.5463125487923435,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"49e2af06-97bd-4a85-be80-84eea300855f\",\r\n            \"valor\": 53.740441984147665,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.259558015852335,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"ee080512-f19c-4eb3-b6fe-a9708916b4c6\",\r\n            \"valor\": 49.98945450037965,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -10.01054549962035,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"616d3c83-06b3-41d3-8493-ddb8f83b81ae\",\r\n            \"valor\": 49.62217610001159,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -10.377823899988407,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"25e0e1d6-c3de-498c-9b0a-b0f77c2ab42a\",\r\n            \"valor\": 50.62314756304937,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.376852436950628,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"9e866410-4821-40fd-835f-81a71bba8bae\",\r\n            \"valor\": 49.98117912571152,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -10.01882087428848,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"bb189b7a-ad6a-486a-a510-97d778bbc272\",\r\n            \"valor\": 55.84978563065343,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.150214369346571,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"170baef8-1a78-4209-9c47-a4082a7babda\",\r\n            \"valor\": 55.161772626362705,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.838227373637295,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"e2df776a-8137-4ab7-9858-b780ce3ada72\",\r\n            \"valor\": 53.89729736839614,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.1027026316038615,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"9bea149a-613e-498f-af4d-62fea97596d4\",\r\n            \"valor\": 57.90413291642948,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.0958670835705178,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"e7ace4c1-09be-45ef-8650-107645ca5c09\",\r\n            \"valor\": 54.68859497444114,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.311405025558862,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"16:00:00\",\r\n            \"segundos\": 68400.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"b33591b6-a256-4876-85ae-7fd951b6336d\",\r\n            \"valor\": 58.21291506934417,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.7870849306558299,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"49cf9045-9d18-4324-bff9-df7550dc6d4d\",\r\n            \"valor\": 58.263240339678426,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.7367596603215745,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"d6296afe-0b5d-4d80-ab9b-0c1edbbfad5b\",\r\n            \"valor\": 58.18932076161961,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.8106792383803878,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"2adf15a4-7a90-4a00-af2f-9c810ec8a6c2\",\r\n            \"valor\": 55.56318265736808,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.436817342631919,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"b74675c0-928c-4622-a510-23d80712a8fb\",\r\n            \"valor\": 50.494367315550036,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.505632684449964,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"28a614d1-0121-4288-806d-45091cbbf68e\",\r\n            \"valor\": 42.62421301934815,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -17.375786980651853,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"cd0a0ef8-3e99-4514-96c6-de806a073688\",\r\n            \"valor\": 57.741977449518735,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.2580225504812645,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"52c2a46d-8304-4828-b971-fe0b44875530\",\r\n            \"valor\": 49.014117965417434,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -10.985882034582566,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"055b3027-1ad2-4148-9042-a3a60e26891a\",\r\n            \"valor\": 56.347124305457584,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.6528756945424163,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"3ea12149-efa8-4ec3-9d3c-870b24bfb10e\",\r\n            \"valor\": 56.72186904652056,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.2781309534794403,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"fb686090-c623-482a-a38a-9fd921b336b0\",\r\n            \"valor\": 44.72486330558165,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -15.27513669441835,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"5b26cc0c-2306-407f-83d6-7efd91e0a689\",\r\n            \"valor\": 52.92203604265025,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.077963957349752,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"d3bf95b5-87df-4e95-b937-6ee7ad454a44\",\r\n            \"valor\": 58.988974153113475,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -1.0110258468865254,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"4722db30-97f9-4075-8f50-449e5b29b5ee\",\r\n            \"valor\": 54.95090593593331,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.0490940640666935,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"13:30:00\",\r\n            \"segundos\": 59400.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"03407a0c-2721-47d1-a472-4a7d34cea16d\",\r\n            \"valor\": 51.200578323373946,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.799421676626054,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"b1cf29af-0755-44a7-8b61-29a0c396c1ab\",\r\n            \"valor\": 53.00366076674548,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.996339233254517,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"ca29fd3a-c88e-4f9a-b966-b5deb64c925e\",\r\n            \"valor\": 54.48752256460628,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.51247743539372,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"2b300978-6664-4346-9f9e-014d69e1a83a\",\r\n            \"valor\": 56.73040785446114,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.2695921455388586,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"4daefb2c-ab94-4304-a519-4d92a60e6fb3\",\r\n            \"valor\": 53.45855981235981,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.541440187640191,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"316f0412-350e-4a98-9cc3-9288f421a5ae\",\r\n            \"valor\": 54.63842947326384,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.361570526736159,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"078e258b-4367-4480-b753-ff837870b06a\",\r\n            \"valor\": 51.30463353416841,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -8.69536646583159,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"113f1c2b-b840-45ea-b12e-aa73dc88bf47\",\r\n            \"valor\": 55.452622710381924,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.547377289618076,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"e67e999b-5aaa-451d-8f24-2518789027aa\",\r\n            \"valor\": 46.82383205300218,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -13.176167946997822,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"2d5f3f8a-1940-4ca4-adc0-a9e600bc4bb9\",\r\n            \"valor\": 52.393498560736816,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.606501439263184,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"3aaffdc4-48f4-404f-a79d-511dc472b6ce\",\r\n            \"valor\": 57.00054812421143,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -2.999451875788573,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"5e171d33-5fa2-4b63-8103-dd252b51d257\",\r\n            \"valor\": 55.65010387414543,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -4.3498961258545705,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"d6b3c328-18e4-4d49-a77e-a35c79131fb1\",\r\n            \"valor\": 54.310684321754486,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -5.689315678245514,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"aa18f5ef-918c-49f9-94ff-d2756f0fb8a7\",\r\n            \"valor\": 59.39113096522461,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -0.6088690347753882,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"393bde42-9cbc-433d-9877-4e083544f442\",\r\n            \"valor\": 53.9800309050796,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.019969094920398,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"92fb451f-f1bd-4168-9dc6-e4a36af3df2c\",\r\n            \"valor\": 49.373450658791,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -10.626549341209,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:30:00\",\r\n            \"segundos\": 66600.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"9fe0fb89-3596-46b6-a557-cc7f72edefac\",\r\n            \"valor\": 52.403679856962725,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.596320143037275,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"fbb6b21b-30da-4df2-baba-8e6a0b352ed7\",\r\n            \"valor\": 52.61794041039358,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.3820595896064205,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:00:00\",\r\n            \"segundos\": 61200.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"5a82889f-ec25-459c-a3fe-100789c8a5c1\",\r\n            \"valor\": 52.89626511898011,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -7.103734881019889,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"2483f1ea-7adb-417e-ab18-d41c85aae8dd\",\r\n            \"valor\": 50.70161344943415,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.298386550565851,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"49db6a01-2592-4285-9083-4f2a41ae8600\",\r\n            \"idCidade\": \"2483f1ea-7adb-417e-ab18-d41c85aae8dd\",\r\n            \"valor\": 19.67,\r\n            \"valorLimite\": 15.0,\r\n            \"diferenca\": 4.670000000000002,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-15\",\r\n            \"unidadeMedida\": \"mm\",\r\n            \"horario\": \"08:00:00\",\r\n            \"segundos\": 126000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"062c28de-0c2b-43f7-88cd-98b8e4653e0b\",\r\n            \"valor\": 53.994202870368945,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -6.0057971296310555,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"49db6a01-2592-4285-9083-4f2a41ae8600\",\r\n            \"idCidade\": \"062c28de-0c2b-43f7-88cd-98b8e4653e0b\",\r\n            \"valor\": 21.41,\r\n            \"valorLimite\": 15.0,\r\n            \"diferenca\": 6.41,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-15\",\r\n            \"unidadeMedida\": \"mm\",\r\n            \"horario\": \"08:00:00\",\r\n            \"segundos\": 126000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"4147f479-cb3c-4aad-9974-219230c6f710\",\r\n            \"valor\": 50.75384263353426,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -9.246157366465738,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"49db6a01-2592-4285-9083-4f2a41ae8600\",\r\n            \"idCidade\": \"4147f479-cb3c-4aad-9974-219230c6f710\",\r\n            \"valor\": 17.18,\r\n            \"valorLimite\": 15.0,\r\n            \"diferenca\": 2.1799999999999997,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-15\",\r\n            \"unidadeMedida\": \"mm\",\r\n            \"horario\": \"08:00:00\",\r\n            \"segundos\": 126000.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"8e32ae58-7d68-4a1a-b2db-5d0ee578f42b\",\r\n            \"valor\": 49.96819280830166,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -10.031807191698341,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"15:00:00\",\r\n            \"segundos\": 64800.0\r\n        },\r\n        {\r\n            \"idEvento\": \"c8982a0f-c1ba-4254-bae7-035e8b6a611c\",\r\n            \"idCidade\": \"710104ff-4ad7-49c0-ae1e-f880f9df1c0f\",\r\n            \"valor\": 56.656363385724404,\r\n            \"valorLimite\": 60,\r\n            \"diferenca\": -3.3436366142755958,\r\n            \"dataGeracao\": \"2025-11-14\",\r\n            \"dataReferencia\": \"2025-11-14\",\r\n            \"unidadeMedida\": \"%\",\r\n            \"horario\": \"14:30:00\",\r\n            \"segundos\": 63000.0\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/avisos/lote",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"avisos",
+						"lote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cria usuario",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"{{$randomFullName}}\",\r\n  \"email\": \"ixf34rxi@gmail.com\",\r\n  \"whatsapp\": \"{{$randomPhoneNumber}}\",\r\n  \"senha\": \"123\",\r\n  \"nivelAcesso\": \"CLIENTE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ModuloUsuariosURL}}/usuarios",
+					"host": [
+						"{{ModuloUsuariosURL}}"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cria preferencia",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"preferencias\": [\r\n    {\r\n      \"idEvento\": \"a665a7bf-a442-4024-9fde-7fe48b27fb5f\",\r\n      \"idCidade\": \"e5d0e4e2-9c2d-49f9-b88f-c6163d6dcf8b\",\r\n      \"valor\": 0,\r\n      \"personalizavel\": false\r\n    }\r\n  ],\r\n  \"idsCanaisPreferidos\": [\r\n    \"272d6a2d-e0d1-4fa9-abab-055131c2a4cc\", \"ed3f001d-655e-428a-9c9f-566e9d4f1203\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ModuloUsuariosURL}}/usuarios/meu-perfil",
+					"host": [
+						"{{ModuloUsuariosURL}}"
+					],
+					"path": [
+						"usuarios",
+						"meu-perfil"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAvisos de hj",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlBase}}/avisos/today",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"avisos",
+						"today"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obter usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlBase}}/usuarios/preferencia/evento/d0fbe379-8c8d-4683-843e-5ca5a9ba9c6a/cidade/3964c7bc-d1d5-44a9-a56a-5305caa2cee5/Detalhado",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"usuarios",
+						"preferencia",
+						"evento",
+						"d0fbe379-8c8d-4683-843e-5ca5a9ba9c6a",
+						"cidade",
+						"3964c7bc-d1d5-44a9-a56a-5305caa2cee5",
+						"Detalhado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlBase VM}}/status",
+					"host": [
+						"{{UrlBase VM}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeStatus\": \"Sucesso\",\r\n    \"idCanal\": \"272d6a2d-e0d1-4fa9-abab-055131c2a4cc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/status",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Canais",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlBase}}/canais",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"canais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Envios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCanal\": \"ed3f001d-655e-428a-9c9f-566e9d4f1203\",\r\n    \"idAviso\": \"None\",\r\n    \"idUsuarioDestinatario\": \"b49fb885-30ce-4c4c-8972-9fe83cab4c45\",\r\n    \"idStatus\": \"a78f91d3-90ec-4b84-8391-85dd62a3ff84\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/envios",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"envios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Envios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCanal\": \"ed3f001d-655e-428a-9c9f-566e9d4f1203\",\r\n    \"idAviso\": None,\r\n    \"idUsuarioDestinatario\": \"b49fb885-30ce-4c4c-8972-9fe83cab4c45\",\r\n    \"idStatus\": \"a78f91d3-90ec-4b84-8391-85dd62a3ff84\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/envios",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"envios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get todos usuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{ModuloUsuariosURL}}/usuarios",
+					"host": [
+						"{{ModuloUsuariosURL}}"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all eventos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{ModuloUsuariosURL}}/eventos",
+					"host": [
+						"{{ModuloUsuariosURL}}"
+					],
+					"path": [
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{Token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "UrlBase",
+			"value": ""
+		},
+		{
+			"key": "Token",
+			"value": ""
+		},
+		{
+			"key": "UrlEnvios",
+			"value": ""
+		},
+		{
+			"key": "UrlBase VM",
+			"value": ""
+		}
+	]
+}

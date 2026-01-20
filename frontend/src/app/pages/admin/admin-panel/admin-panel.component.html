@@ -1,0 +1,130 @@
+<mat-sidenav-container class="admin-container">
+  
+  <mat-sidenav #sidenav mode="side" opened class="sidenav">
+    <div class="brand-sidenav">
+      <img src="../../../../assets/cempa_horizontal.png" alt="CEMPA-Cerrado" class="brand-logo" />
+    </div>
+    
+    <mat-nav-list>
+      <a mat-list-item (click)="selectedView = 'avisos'" [class.active]="selectedView === 'avisos'">
+        <mat-icon matListItemIcon>warning_amber</mat-icon>
+        <span matListItemTitle>Avisos</span>
+      </a>
+      <a mat-list-item (click)="selectedView = 'envios'" [class.active]="selectedView === 'envios'">
+        <mat-icon matListItemIcon>send</mat-icon>
+        <span matListItemTitle>Envios</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="main-content">
+    
+    <mat-toolbar color="primary" class="toolbar">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>SIGEDAM - Painel Administrativo</span>
+      
+      <span class="spacer"></span>
+      
+      <button mat-button (click)="logout()">
+        <mat-icon>exit_to_app</mat-icon>
+        SAIR
+      </button>
+    </mat-toolbar>
+
+    <div class="content-wrapper">
+      
+      <form class="filter-form" [formGroup]="filterForm" (ngSubmit)="onFilter()">
+        
+        <mat-form-field appearance="outline">
+          <mat-label>Data</mat-label>
+          <input matInput [matDatepicker]="picker" formControlName="data" placeholder="dd/mm/aaaa">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Evento</mat-label>
+          <mat-select formControlName="evento">
+            <mat-option value="">Todos</mat-option>
+            <mat-option *ngFor="let e of eventos" [value]="e.id">
+              {{ e.nomeEvento }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Cidade</mat-label>
+          <mat-select formControlName="cidade">
+            <mat-option value="">Todas</mat-option>
+            <mat-option *ngFor="let c of cidades" [value]="c.id">
+              {{ c.nome }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <button mat-flat-button color="primary" type="submit">Filtrar</button>
+      </form>
+
+      <div *ngIf="selectedView === 'avisos'" class="table-container">
+        <h2>Painel de Avisos</h2>
+
+        <div class="loading-shade" *ngIf="isLoading">
+          <mat-spinner diameter="40"></mat-spinner>
+        </div>
+
+        <table mat-table [dataSource]="avisosData" class="mat-elevation-z2">
+
+          <ng-container matColumnDef="data">
+            <th mat-header-cell *matHeaderCellDef> Data Ref. </th>
+            <td mat-cell *matCellDef="let aviso"> {{ aviso.dataReferencia | date:'dd/MM/yyyy' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="evento">
+            <th mat-header-cell *matHeaderCellDef> Evento </th>
+            <td mat-cell *matCellDef="let aviso"> {{ aviso.nomeEvento }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="cidade">
+            <th mat-header-cell *matHeaderCellDef> Cidade </th>
+            <td mat-cell *matCellDef="let aviso"> {{ aviso.nomeCidade }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="valor">
+            <th mat-header-cell *matHeaderCellDef> Medição </th>
+            <td mat-cell *matCellDef="let aviso"> 
+              <strong>{{ aviso.valor }}</strong> {{ aviso.unidadeMedida }}
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+          <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell no-data" colspan="4">
+              Nenhum aviso encontrado com esses filtros.
+            </td>
+          </tr>
+        </table>
+
+        <mat-paginator 
+          [length]="totalElements"
+          [pageSize]="pageSize"
+          [pageIndex]="pageIndex"
+          [pageSizeOptions]="[5, 10, 25, 100]"
+          (page)="onPageChange($event)"
+          showFirstLastButtons>
+        </mat-paginator>
+      </div>
+
+      <div *ngIf="selectedView === 'envios'">
+        <h2>Painel de Envios</h2>
+        <p style="color: gray; font-style: italic; padding: 20px;">
+          A funcionalidade de visualização de envios está em construção.
+        </p>
+      </div>
+
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

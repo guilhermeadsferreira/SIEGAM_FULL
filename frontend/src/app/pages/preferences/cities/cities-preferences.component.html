@@ -1,0 +1,67 @@
+<button mat-icon-button class="logout-btn" (click)="logout()" aria-label="Sair do sistema">
+  <mat-icon>logout</mat-icon>
+</button>
+<mat-card class="preferences-card">
+  <div class="brand">
+    <img src="../../../../assets/cempa_horizontal.png" alt="CEMPA-Cerrado" class="brand-logo" />
+  </div>
+
+  <mat-card-content>
+    <p class="intro-text">
+      Receba avisos personalizados sobre riscos climáticos diretamente do Centro de Excelência em Estudos, Monitoramento e Previsões Ambientais do Cerrado/Universidade Federal de Goiás (CEMPA).
+      <br>
+      Escolha suas cidades, tipos de avisos e como deseja ser notificado.
+    </p>
+
+    <form [formGroup]="preferencesForm" (ngSubmit)="onSubmit()">
+      <div class="add-city-section">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Pesquise e adicione uma cidade</mat-label>
+          <!-- Adicione [matAutocomplete]="auto" e o displayWith -->
+          <input type="text" matInput [formControl]="citySearchCtrl" [matAutocomplete]="auto">
+          
+          <!-- Adicione [displayWith]="displayFn" -->
+          <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+            <!-- O valor agora é o objeto city inteiro -->
+            <mat-option *ngFor="let city of filteredCities | async" [value]="city">
+              {{city.nome}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+
+        <button mat-flat-button color="primary" type="button" (click)="addCity()" [disabled]="!citySearchCtrl.value">
+          Adicionar cidade
+        </button>
+      </div>
+
+      <div class="selected-cities-list" formArrayName="selectedCities">
+        <div *ngFor="let cityCtrl of selectedCities.controls; let i = index" [formGroupName]="i" class="city-item">
+          <div class="city-header">
+            <h3>{{ cityCtrl.value.name }}</h3>
+            <button mat-icon-button type="button" (click)="removeCity(i)" aria-label="Remover cidade">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+
+          <div class="preferences-checkboxes" formGroupName="preferences">
+            <mat-checkbox color="primary" formControlName="humidity">Umidade</mat-checkbox>
+            <mat-checkbox color="primary" formControlName="temperature">Temperatura</mat-checkbox>
+            <mat-checkbox color="primary" formControlName="wind">Vento</mat-checkbox>
+            <mat-checkbox color="primary" formControlName="heavyRain">Chuva intensa</mat-checkbox>
+          </div>
+        </div>
+
+        <p *ngIf="selectedCities.length === 0" class="no-cities-message">
+          Nenhuma cidade adicionada ainda.
+        </p>
+      </div>
+
+      <div class="actions">
+        <button mat-raised-button color="primary" type="submit" [disabled]="!canProceed">
+          Próxima etapa
+        </button>
+      </div>
+
+    </form>
+  </mat-card-content>
+</mat-card>

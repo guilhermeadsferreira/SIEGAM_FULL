@@ -1,0 +1,169 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(180deg, #fbfdff 0%, #f6f9ff 100%);
+}
+
+.preferences-card {
+  width: 100%;
+  max-width: 700px;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(15, 30, 60, 0.06);
+  color: #0f1724;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.brand-logo {
+  height: 48px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.intro-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #5a6a85;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(15, 30, 60, 0.08);
+  padding-bottom: 0.75rem;
+
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #0f1724;
+  }
+
+  mat-icon {
+    color: #5a6a85;
+  }
+}
+
+.preference-section {
+  padding: 1.5rem 0;
+}
+
+.preference-description {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #334155;
+}
+
+.radio-group, .checkbox-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.conditional-input {
+  margin-top: 1.5rem;
+}
+
+.temp-input {
+  max-width: 200px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(15, 30, 60, 0.08);
+}
+/* ... estilos anteriores ... */
+
+.section-title {
+  font-weight: 600;
+  color: #3f51b5; /* Cor primária */
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.vertical-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end; /* Alinha à direita */
+  gap: 1rem; /* Espaço entre os botões */
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(15, 30, 60, 0.08);
+
+  button {
+    min-width: 120px; /* Garante um tamanho mínimo clicável */
+  }
+}
+
+.logout-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #5a6a85;
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    color: #d32f2f;
+  }
+}
+
+@media (max-width: 600px) {
+  .logout-btn {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  :host {
+    padding: 0; 
+    align-items: stretch; 
+    background: #ffffff; 
+  }
+
+  .preferences-card {
+    margin: 0; 
+    border-radius: 0; 
+    box-shadow: none; 
+    max-width: 100%; 
+    min-height: 100vh; 
+    
+    padding: 1rem 1.5rem; 
+  }
+
+  .logout-btn {
+    top: 10px;
+    right: 10px;
+    z-index: 10; 
+  }
+}

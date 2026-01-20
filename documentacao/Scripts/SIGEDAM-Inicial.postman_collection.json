@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "634fce00-60cb-489e-85d1-3fe8b4794d90",
+		"name": "SIGEDAM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30489755"
+	},
+	"item": [
+		{
+			"name": "Auth Local",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Verify HTTP 200 status",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Attempt to parse JSON safely",
+							"let isJson = false;",
+							"let body = pm.response.text();",
+							"let data = null;",
+							"",
+							"try {",
+							"    data = pm.response.json();",
+							"    isJson = true;",
+							"} catch (e) {",
+							"    isJson = false;",
+							"}",
+							"",
+							"pm.test(\"Response is valid JSON\", function () {",
+							"    pm.expect(isJson, \"Response body is not valid JSON\").to.be.true;",
+							"});",
+							"",
+							"// When 200 and JSON, ensure token exists and set collection variable",
+							"pm.test(\"Token field exists when status is 200\", function () {",
+							"    if (pm.response.code === 200 && isJson) {",
+							"        pm.expect(data, \"Parsed JSON is null\").to.be.an(\"object\");",
+							"        pm.expect(data).to.have.property(\"token\");",
+							"        const token = data && data.token;",
+							"        pm.expect(token, \"token is empty or missing\").to.be.a(\"string\").and.not.empty;",
+							"        if (token) {",
+							"            pm.collectionVariables.set(\"Token\", token);",
+							"            console.info(\"Collection variable 'Token' was set from login response.\");",
+							"        }",
+							"    } else {",
+							"        // If not 200 or not JSON, make the assertion fail with context",
+							"        pm.expect(pm.response.code, \"Expected HTTP 200\").to.eql(200);",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"admin@admin.com\",\r\n  \"senha\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/usuarios/login",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"usuarios",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar lista cidade",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cidades\": [\r\n    {\"nome\": \"Abadia de Goiás\"},{\"nome\":\"Abadiânia\"},{\"nome\":\"Acreúna\"},{\"nome\":\"Adelândia\"},{\"nome\":\"Água Fria de Goiás\"},{\"nome\":\"Água Limpa\"},{\"nome\":\"Águas Lindas de Goiás\"},{\"nome\":\"Alexânia\"},{\"nome\":\"Aloândia\"},{\"nome\":\"Alto Horizonte\"},{\"nome\":\"Alto Paraíso de Goiás\"},{\"nome\":\"Alvorada do Norte\"},{\"nome\":\"Amaralina\"},{\"nome\":\"Americano do Brasil\"},{\"nome\":\"Amorinópolis\"},{\"nome\":\"Anápolis\"},{\"nome\":\"Anhanguera\"},{\"nome\":\"Anicuns\"},{\"nome\":\"Aparecida de Goiânia\"},{\"nome\":\"Aparecida do Rio Doce\"},{\"nome\":\"Apore\"},{\"nome\":\"Araçu\"},{\"nome\":\"Aragarças\"},{\"nome\":\"Aragoiânia\"},{\"nome\":\"Araguapaz\"},{\"nome\":\"Arenópolis\"},{\"nome\":\"Aruanã\"},{\"nome\":\"Aurilândia\"},{\"nome\":\"Avelinópolis\"},{\"nome\":\"Baliza\"},{\"nome\":\"Barro Alto\"},{\"nome\":\"Bela Vista de Goiás\"},{\"nome\":\"Bom Jardim de Goiás\"},{\"nome\":\"Bom Jesus de Goiás\"},{\"nome\":\"Bonfinópolis\"},{\"nome\":\"Bonópolis\"},{\"nome\":\"Brazabrantes\"},{\"nome\":\"Britânia\"},{\"nome\":\"Buriti Alegre\"},{\"nome\":\"Buriti de Goiás\"},{\"nome\":\"Buritinópolis\"},{\"nome\":\"Cabeceiras\"},{\"nome\":\"Cachoeira Alta\"},{\"nome\":\"Cachoeira de Goiás\"},{\"nome\":\"Cachoeira Dourada\"},{\"nome\":\"Caçu\"},{\"nome\":\"Caiapônia\"},{\"nome\":\"Caldas Novas\"},{\"nome\":\"Caldazinha\"},{\"nome\":\"Campestre de Goiás\"},{\"nome\":\"Campinaçu\"},{\"nome\":\"Campinorte\"},{\"nome\":\"Campo Alegre de Goiás\"},{\"nome\":\"Campo Limpo de Goiás\"},{\"nome\":\"Campos Belos\"},{\"nome\":\"Campos Verdes\"},{\"nome\":\"Carmo do Rio Verde\"},{\"nome\":\"Castelândia\"},{\"nome\":\"Catalão\"},{\"nome\":\"Caturaí\"},{\"nome\":\"Cavalcante\"},{\"nome\":\"Ceres\"},{\"nome\":\"Cezarina\"},{\"nome\":\"Chapadão do Céu\"},{\"nome\":\"Cidade Ocidental\"},{\"nome\":\"Cocalzinho de Goiás\"},{\"nome\":\"Colinas do Sul\"},{\"nome\":\"Córrego do Ouro\"},{\"nome\":\"Corumbá de Goiás\"},{\"nome\":\"Corumbaíba\"},{\"nome\":\"Cristalina\"},{\"nome\":\"Cristianópolis\"},{\"nome\":\"Crixás\"},{\"nome\":\"Cromínia\"},{\"nome\":\"Cumari\"},{\"nome\":\"Damianópolis\"},{\"nome\":\"Damolândia\"},{\"nome\":\"Davinópolis\"},{\"nome\":\"Diorama\"},{\"nome\":\"Divinópolis de Goiás\"},{\"nome\":\"Doverlândia\"},{\"nome\":\"Edealina\"},{\"nome\":\"Edéia\"},{\"nome\":\"Estrela do Norte\"},{\"nome\":\"Faina\"},{\"nome\":\"Fazenda Nova\"},{\"nome\":\"Firminópolis\"},{\"nome\":\"Flores de Goiás\"},{\"nome\":\"Formosa\"},{\"nome\":\"Formoso\"},{\"nome\":\"Gameleira de Goiás\"},{\"nome\":\"Goianápolis\"},{\"nome\":\"Goiandira\"},{\"nome\":\"Goianésia\"},{\"nome\":\"Goiânia\"},{\"nome\":\"Goianira\"},{\"nome\":\"Goiás\"},{\"nome\":\"Goiatuba\"},{\"nome\":\"Gouvelândia\"},{\"nome\":\"Guapó\"},{\"nome\":\"Guaraíta\"},{\"nome\":\"Guarani de Goiás\"},{\"nome\":\"Guarinos\"},{\"nome\":\"Heitoraí\"},{\"nome\":\"Hidrolândia\"},{\"nome\":\"Hidrolina\"},{\"nome\":\"Iaciara\"},{\"nome\":\"Inaciolândia\"},{\"nome\":\"Indiara\"},{\"nome\":\"Inhumas\"},{\"nome\":\"Ipameri\"},{\"nome\":\"Ipiranga de Goiás\"},{\"nome\":\"Iporá\"},{\"nome\":\"Israelândia\"},{\"nome\":\"Itaberaí\"},{\"nome\":\"Itaguari\"},{\"nome\":\"Itaguaru\"},{\"nome\":\"Itajá\"},{\"nome\":\"Itapaci\"},{\"nome\":\"Itapirapuã\"},{\"nome\":\"Itapuranga\"},{\"nome\":\"Itarumã\"},{\"nome\":\"Itauçu\"},{\"nome\":\"Itumbiara\"},{\"nome\":\"Ivolândia\"},{\"nome\":\"Jandaia\"},{\"nome\":\"Jaraguá\"},{\"nome\":\"Jataí\"},{\"nome\":\"Jaupaci\"},{\"nome\":\"Jesúpolis\"},{\"nome\":\"Joviânia\"},{\"nome\":\"Jussara\"},{\"nome\":\"Lagoa Santa\"},{\"nome\":\"Leopoldo de Bulhões\"},{\"nome\":\"Luziânia\"},{\"nome\":\"Mairipotaba\"},{\"nome\":\"Mambaí\"},{\"nome\":\"Mara Rosa\"},{\"nome\":\"Marzagão\"},{\"nome\":\"Matrinchã\"},{\"nome\":\"Maurilândia\"},{\"nome\":\"Mimoso de Goiás\"},{\"nome\":\"Minaçu\"},{\"nome\":\"Mineiros\"},{\"nome\":\"Moiçorá\"},{\"nome\":\"Monte Alegre de Goiás\"},{\"nome\":\"Montes Claros de Goiás\"},{\"nome\":\"Montividiu\"},{\"nome\":\"Montividiu do Norte\"},{\"nome\":\"Morrinhos\"},{\"nome\":\"Morro Agudo de Goiás\"},{\"nome\":\"Mossâmedes\"},{\"nome\":\"Mozarlândia\"},{\"nome\":\"Mundo Novo\"},{\"nome\":\"Mutunópolis\"},{\"nome\":\"Nazário\"},{\"nome\":\"Nerópolis\"},{\"nome\":\"Niquelândia\"},{\"nome\":\"Nova América\"},{\"nome\":\"Nova Aurora\"},{\"nome\":\"Nova Crixás\"},{\"nome\":\"Nova Glória\"},{\"nome\":\"Nova Iguaçu de Goiás\"},{\"nome\":\"Nova Roma\"},{\"nome\":\"Nova Veneza\"},{\"nome\":\"Novo Brasil\"},{\"nome\":\"Novo Gama\"},{\"nome\":\"Novo Planalto\"},{\"nome\":\"Orizona\"},{\"nome\":\"Ouro Verde de Goiás\"},{\"nome\":\"Ouvidor\"},{\"nome\":\"Padre Bernardo\"},{\"nome\":\"Palestina de Goiás\"},{\"nome\":\"Palmeiras de Goiás\"},{\"nome\":\"Palmelo\"},{\"nome\":\"Palminópolis\"},{\"nome\":\"Panamá\"},{\"nome\":\"Paranaiguara\"},{\"nome\":\"Paraúna\"},{\"nome\":\"Perolândia\"},{\"nome\":\"Petrolina de Goiás\"},{\"nome\":\"Pilar de Goiás\"},{\"nome\":\"Piracanjuba\"},{\"nome\":\"Piranhas\"},{\"nome\":\"Pirenópolis\"},{\"nome\":\"Pires do Rio\"},{\"nome\":\"Planaltina\"},{\"nome\":\"Pontalina\"},{\"nome\":\"Porangatu\"},{\"nome\":\"Porteirão\"},{\"nome\":\"Portelândia\"},{\"nome\":\"Posse\"},{\"nome\":\"Professor Jamil\"},{\"nome\":\"Quirinópolis\"},{\"nome\":\"Região Metropolitana de Goiânia\"},{\"nome\":\"Rialma\"},{\"nome\":\"Rianápolis\"},{\"nome\":\"Rio Quente\"},{\"nome\":\"Rio Verde\"},{\"nome\":\"Rio Verde Região Leste\"},{\"nome\":\"Rio Verde Região Norte\"},{\"nome\":\"Rio Verde Região Sul\"},{\"nome\":\"Rubiataba\"},{\"nome\":\"Sanclerlândia\"},{\"nome\":\"Santa Bárbara de Goiás\"},{\"nome\":\"Santa Cruz de Goiás\"},{\"nome\":\"Santa Fé de Goiás\"},{\"nome\":\"Santa Helena de Goiás\"},{\"nome\":\"Santa Isabel\"},{\"nome\":\"Santa Rita do Araguaia\"},{\"nome\":\"Santa Rita do Novo Destino\"},{\"nome\":\"Santa Rosa de Goiás\"},{\"nome\":\"Santa Tereza de Goiás\"},{\"nome\":\"Santa Terezinha de Goiás\"},{\"nome\":\"Santo Antônio da Barra\"},{\"nome\":\"Santo Antônio de Goiás\"},{\"nome\":\"Santo Antônio do Descoberto\"},{\"nome\":\"São Domingos\"},{\"nome\":\"São Francisco de Goiás\"},{\"nome\":\"São João d'Aliança\"},{\"nome\":\"São João da Paraúna\"},{\"nome\":\"São Luís de Montes Belos\"},{\"nome\":\"São Luiz do Norte\"},{\"nome\":\"São Miguel do Araguaia\"},{\"nome\":\"São Miguel do Passa Quatro\"},{\"nome\":\"São Patrício\"},{\"nome\":\"São Simão\"},{\"nome\":\"Senador Canedo\"},{\"nome\":\"Serranópolis\"},{\"nome\":\"Silvânia\"},{\"nome\":\"Simolândia\"},{\"nome\":\"Sítio d'Abadia\"},{\"nome\":\"Taquaral de Goiás\"},{\"nome\":\"Teresina de Goiás\"},{\"nome\":\"Terezópolis de Goiás\"},{\"nome\":\"Três Ranchos\"},{\"nome\":\"Trindade\"},{\"nome\":\"Trombas\"},{\"nome\":\"Turvânia\"},{\"nome\":\"Turvelândia\"},{\"nome\":\"Uirapuru\"},{\"nome\":\"Uruaçu\"},{\"nome\":\"Uruaçú\"},{\"nome\":\"Urutaí\"},{\"nome\":\"Valparaíso de Goiás\"},{\"nome\":\"Várjão\"},{\"nome\":\"Vianópolis\"},{\"nome\":\"Vicentinópolis\"},{\"nome\":\"Vila Boa\"},{\"nome\":\"Vila Propício\"}\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/cidades/bulk",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"cidades",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar canal Whatsapp",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeCanal\": \"Whatsapp\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/canais",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"canais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar canal Email",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeCanal\": \"Email\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/canais",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"canais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar evento chuva",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeEvento\": \"Chuva\",\r\n  \"personalizavel\": false,\r\n  \"horario\": \"2022-03-10T12:15:50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/eventos",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar evento vento",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeEvento\": \"Vento\",\r\n  \"personalizavel\": false,\r\n  \"horario\": \"2022-03-10T12:15:50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/eventos",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar evento temp alta",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeEvento\": \"Temperatura Alta\",\r\n  \"personalizavel\": false,\r\n  \"horario\": \"2022-03-10T12:15:50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/eventos",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar evento temp baixa",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeEvento\": \"Temperatura Baixa\",\r\n  \"personalizavel\": false,\r\n  \"horario\": \"2022-03-10T12:15:50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/eventos",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar evento umidade baixa",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeEvento\": \"Umidade Baixa\",\r\n  \"personalizavel\": false,\r\n  \"horario\": \"2022-03-10T12:15:50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/eventos",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{Token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "UrlBase",
+			"value": ""
+		},
+		{
+			"key": "Token",
+			"value": "",
+			"type": "default"
+		}
+	]
+}

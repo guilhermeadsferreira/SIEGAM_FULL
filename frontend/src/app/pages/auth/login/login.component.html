@@ -1,0 +1,26 @@
+<mat-card class="login-card">
+  <div class="brand">
+    <img src="../../../../assets/cempa_horizontal.png" alt="CEMPA-Cerrado" class="brand-logo" />
+  </div>
+
+  <mat-card-content>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>E-mail</mat-label>
+        <input matInput formControlName="username" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Senha</mat-label>
+        <input matInput type="password" formControlName="password" />
+      </mat-form-field>
+      <div class="actions">
+        <button mat-raised-button color="primary" type="submit">Entrar</button>
+      </div>
+      <div class="register-link">
+        <span>Não tem uma conta?</span>
+        <a routerLink="/auth/register">Cadastrar-se</a>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

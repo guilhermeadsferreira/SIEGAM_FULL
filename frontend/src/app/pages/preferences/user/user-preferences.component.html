@@ -1,0 +1,122 @@
+<button mat-icon-button class="logout-btn" (click)="logout()" aria-label="Sair do sistema">
+  <mat-icon>logout</mat-icon>
+</button>
+<mat-card class="preferences-card">
+  <div class="brand">
+    <img src="../../../../assets/cempa_horizontal.png" alt="CEMPA-Cerrado" class="brand-logo" />
+  </div>
+
+  <mat-card-content>
+    <p class="intro-text">
+      Configure os detalhes dos avisos para as variáveis que você selecionou.
+    </p>
+
+    <div class="section-header">
+      <h2>Preferências</h2>
+      <mat-icon>settings</mat-icon>
+    </div>
+
+    <form [formGroup]="preferencesForm" (ngSubmit)="onSubmit()">
+
+      <div class="preference-section">
+        <p class="section-title">CHUVA INTENSA</p>
+        <p class="preference-description">Ao selecionar chuva, você sempre receberá avisos quando ultrapassar o valor <strong>15 mm</strong></p>
+      </div>
+
+      <div class="preference-section" formGroupName="humidity" *ngIf="showHumidity">
+        <p class="section-title">UMIDADE</p>
+        <p class="preference-description">Como deseja ser notificado sobre umidade?</p>
+        
+        <mat-radio-group formControlName="type" class="vertical-radio-group">
+          <mat-radio-button color="primary" value="standard">
+            Apenas valores (Crítica &lt; 30%)
+          </mat-radio-button>
+          <mat-radio-button color="primary" value="custom">
+            Expandir monitoramento (Incluir risco à saúde 30-60%)
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <mat-divider *ngIf="showHumidity && (showTemp || showWind)"></mat-divider>
+
+      <div class="preference-section" formGroupName="highTemp" *ngIf="showTemp">
+        <p class="section-title">TEMPERATURAS ALTAS</p>
+        <p class="preference-description">Monitoramento de calor:</p>
+        
+        <mat-radio-group formControlName="type" class="radio-group">
+          <mat-radio-button color="primary" value="standard">Apenas valores críticos</mat-radio-button>
+          <mat-radio-button color="primary" value="custom">Personalizar (> X°C)</mat-radio-button>
+        </mat-radio-group>
+
+        <div *ngIf="preferencesForm.get('highTemp.type')?.value === 'custom'" class="conditional-input">
+          <mat-form-field appearance="outline" class="temp-input">
+            <mat-label>Notificar acima de</mat-label>
+            <input matInput type="number" formControlName="value" placeholder="Ex: 35">
+            <span matSuffix>°C</span>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <mat-divider *ngIf="showTemp"></mat-divider>
+
+      <div class="preference-section" formGroupName="lowTemp" *ngIf="showTemp">
+        <p class="section-title">TEMPERATURAS BAIXAS</p>
+        <p class="preference-description">Monitoramento de frio:</p>
+        
+        <mat-radio-group formControlName="type" class="radio-group">
+          <mat-radio-button color="primary" value="standard">Apenas valores críticos</mat-radio-button>
+          <mat-radio-button color="primary" value="custom">Personalizar (&lt; X°C)</mat-radio-button>
+        </mat-radio-group>
+
+        <div *ngIf="preferencesForm.get('lowTemp.type')?.value === 'custom'" class="conditional-input">
+          <mat-form-field appearance="outline" class="temp-input">
+            <mat-label>Notificar abaixo de</mat-label>
+            <input matInput type="number" formControlName="value" placeholder="Ex: 10">
+            <span matSuffix>°C</span>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <mat-divider *ngIf="showTemp && showWind"></mat-divider>
+
+      <div class="preference-section" formGroupName="wind" *ngIf="showWind">
+        <p class="section-title">VENTO</p>
+        <p class="preference-description">Selecione o intervalo de monitoramento:</p>
+        
+        <mat-radio-group formControlName="type" class="vertical-radio-group">
+          <mat-radio-button color="primary" value="12-20">
+            Entre 12 e 20km/h
+          </mat-radio-button>
+          <mat-radio-button color="primary" value="20-30">
+            Entre 20 e 30km/h
+          </mat-radio-button>
+          <mat-radio-button color="primary" value="critical">
+            Apenas críticos (> 30km/h)
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <mat-divider></mat-divider>
+
+      <div class="preference-section" formGroupName="channels">
+        <p class="section-title">CANAIS DE NOTIFICAÇÃO</p>
+        <p class="preference-description">Por onde deseja receber os avisos?</p>
+        <div class="checkbox-group">
+          <mat-checkbox color="primary" formControlName="email">E-mail</mat-checkbox>
+          <mat-checkbox color="primary" formControlName="whatsapp">WhatsApp</mat-checkbox>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button mat-stroked-button type="button" (click)="onBack()">
+          Voltar
+        </button>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="preferencesForm.invalid">
+          Salvar preferências
+        </button>
+      </div>
+
+    </form>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,57 @@
+
+{
+  "cidades_alertas": [
+    {
+      "cidade": "Goiânia",
+      "uf": "GO",
+      "alertas": [
+        {
+          "tipo": "temperatura alta",
+          "valor": 35.5,
+          "unidade": "°C",
+          "data": "15/11/2025",
+          "horario": "14:00",
+          "periodo": "13:00 às 15:00"
+        }
+      ]
+    },
+    {
+      "cidade": "Rio Verde",
+      "uf": "GO",
+      "alertas": [
+        {
+          "tipo": "temperatura baixa",
+          "valor": 12.2,
+          "unidade": "°C",
+          "data": "16/11/2025",
+          "horario": "05:00",
+          "periodo": "04:00 às 06:00"
+        },
+        {
+          "tipo": "umidade baixa",
+          "valor": 25,
+          "unidade": "%",
+          "data": "15/11/2025",
+          "horario": "15:00",
+          "periodo": "14:00 às 16:00"
+        },
+        {
+          "tipo": "vento",
+          "valor": 60,
+          "unidade": "km/h",
+          "data": "15/11/2025",
+          "horario": "17:00",
+          "periodo": "16:00 às 18:00"
+        },
+        {
+          "tipo": "chuva",
+          "valor": 20,
+          "unidade": "mm",
+          "data": "15/11/2025",
+          "horario": "20:00",
+          "periodo": "19:00 às 21:00"
+        }
+      ]
+    }
+  ]
+}

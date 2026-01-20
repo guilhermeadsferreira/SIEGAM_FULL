@@ -1,0 +1,121 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(180deg, #fbfdff 0%, #f6f9ff 100%);
+}
+
+.register-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(15, 30, 60, 0.06);
+  color: #0f1724;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(15, 30, 60, 0.04);
+}
+
+.brand-logo {
+  height: 48px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.full-width { width: 100%; }
+
+.actions {
+  display: flex;
+  margin-top: 1rem;
+  align-items: stretch;
+}
+
+.actions button {
+  flex-grow: 1;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: #5a6a85;
+}
+
+.login-link a {
+  color: #3f51b5;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 0.25rem;
+}
+
+.terms-section {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  
+  mat-checkbox {
+    font-size: 0.85rem; 
+    line-height: 1.4;
+    color: #334155;
+    
+    ::ng-deep .mdc-label {
+      white-space: normal; 
+    }
+  }
+}
+
+.terms-error {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  margin-left: 0.5rem;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  :host {
+    padding: 0; 
+    align-items: stretch;
+    background: #ffffff; 
+  }
+
+  .register-card {
+    margin: 0; 
+    border-radius: 0; 
+    box-shadow: none;
+    border: none;
+    
+    max-width: 100%;
+    min-height: 100vh; 
+    
+    padding: 1.5rem 1rem; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .brand-logo {
+    height: 40px;
+  }
+  
+  .terms-section {
+    margin-bottom: 2rem; 
+  }
+}
+
+.intro-text {
+  text-align: center;
+  color: #5a6a85; 
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  padding: 0 0.5rem; 
+}
