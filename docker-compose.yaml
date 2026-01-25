@@ -1,7 +1,6 @@
 services:
   modulo_envios:
     container_name: modulo_envios
-    image: modulo_envios:1.0.0
     build: ./backend/modulo_envios
     ports:
       - "8000:8000"
@@ -14,8 +13,10 @@ services:
     environment:
       TZ: America/Sao_Paulo
     depends_on:
-      - db
-      - redis
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
     networks:
       - sigedam-net
 
@@ -28,14 +29,20 @@ services:
       QUARKUS_DATASOURCE_JDBC_URL: jdbc:postgresql://db:5432/sigedam
       TZ: America/Sao_Paulo
     depends_on:
-      - db
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "exec 3<>/dev/tcp/localhost/8002 && echo -e 'GET /q/health HTTP/1.0\\r\\nHost: localhost\\r\\n\\r\\n' >&3 && timeout 1 cat <&3 | grep -q 'UP'"]
+      interval: 5s
+      timeout: 10s
+      retries: 60
+      start_period: 60s
     networks:
       - sigedam-net
 
   modulo_envios_worker:
     container_name: modulo_envios_worker
     build: ./backend/modulo_envios
-    image: modulo_envios:1.0.0
     volumes:
       - ./backend/modulo_envios:/app
     command: python -u -m src.consumers.notification_consumer
@@ -44,7 +51,10 @@ services:
     environment:
       TZ: America/Sao_Paulo
     depends_on:
-      - redis
+      redis:
+        condition: service_healthy
+      modulo_usuarios:
+        condition: service_healthy
     networks:
       - sigedam-net
 
@@ -59,6 +69,12 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cempa -d sigedam"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     networks:
       - sigedam-net
 
@@ -69,6 +85,11 @@ services:
       - "6379:6379"
     volumes:
       - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     networks:
       - sigedam-net
 

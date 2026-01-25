@@ -6,7 +6,7 @@ VALUES (
     '62999999999',
     CURRENT_TIMESTAMP,
     CURRENT_DATE,
-    '$2a$10$n1TN5yMeHO2TUV/ZmAbs1.JoWjC93cPvNufgCVosMmrIhYOn..qVG',
+    '$2a$12$rvgX1ZbqhzUyO0X99HroXe/TVWkZ4TnYvjaqiyZGvDCAOSFiADGhy',
     'ADMIN'
 );
 
@@ -18,7 +18,7 @@ VALUES (
     '62888888888',
     CURRENT_TIMESTAMP,
     CURRENT_DATE,
-    '$2a$10$n1TN5yMeHO2TUV/ZmAbs1.JoWjC93cPvNufgCVosMmrIhYOn..qVG',
+    '$2a$12$rvgX1ZbqhzUyO0X99HroXe/TVWkZ4TnYvjaqiyZGvDCAOSFiADGhy',
     'CLIENTE'
 );
 
