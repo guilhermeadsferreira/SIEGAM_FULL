@@ -1,0 +1,24 @@
+services:
+  redis:
+    image: redis:8.4.0-alpine
+    ports:
+      - 6380:6379
+    networks:
+      - backend
+
+  celery_worker:
+    build: .
+    depends_on:
+      - redis
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    command: uv run celery --app main worker --beat --loglevel=info
+    networks:
+      - backend
+    volumes:
+      - ./tmp:/app/tmp
+      - ./logs:/app/logs
+
+networks:
+  backend:
+    driver: bridge

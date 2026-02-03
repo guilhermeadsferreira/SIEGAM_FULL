@@ -1,0 +1,7 @@
+### Download current file
+
+GET http://localhost:8000/download HTTP/1.1
+
+### Transform current file
+
+GET http://localhost:8000/transform HTTP/1.1
