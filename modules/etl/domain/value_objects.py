@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import unicodedata
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 from typing import Dict, Any
@@ -99,3 +100,21 @@ class PolygonData:
             "timestamp": self.timestamp.to_datetime_string(),
             "values": self.values,
         }
+
+
+@dataclass(frozen=True, slots=True)
+class CityName:
+    """
+    Encapsula nome de cidade com normalização para comparação.
+    Garante que 'Goiânia', 'GOIANIA' e 'goiania' sejam tratados como iguais.
+    """
+
+    raw: str
+
+    @property
+    def normalized(self) -> str:
+        nfkd = unicodedata.normalize("NFKD", self.raw)
+        return nfkd.encode("ASCII", "ignore").decode("ASCII").lower().strip()
+
+    def matches(self, other: "CityName") -> bool:
+        return self.normalized == other.normalized

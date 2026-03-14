@@ -1,0 +1,47 @@
+---
+description: Atualizar progress.md sempre que houver evolução no projeto
+alwaysApply: true
+---
+
+# Atualização do Progresso (progress.md)
+
+Sempre que você fizer alterações significativas neste projeto, **atualize o arquivo `documentacao/progress.md`**.
+
+## Quando atualizar
+
+- Implementação de features
+- Refatorações
+- Correções que mudam comportamento
+- Ajustes de arquitetura ou fluxo
+
+## Estrutura obrigatória
+
+O `progress.md` é organizado por **dia** no formato `DD/MM/YYYY`.
+
+Se o dia atual ainda não existir no documento, **crie um novo "Tópico do dia"** com a data como título.
+
+## Formato de cada entrada
+
+Para cada dia, registre:
+
+1. **O que fizemos** — descrição em linguagem de produto (evite jargão técnico)
+2. **Por que fizemos** — motivação, especialmente importante em refatorações
+
+## Linguagem
+
+- **Público:** Stakeholders e relatórios semanais
+- **Tom:** Claro, objetivo, focado em valor e impacto
+- **Evitar:** Termos técnicos desnecessários (PostgreSQL, Celery, etc.)
+- **Priorizar:** O que mudou para o usuário ou para a operação do sistema
+
+## Exemplo de entrada
+
+```markdown
+## 14/03/2026
+
+### Tópico do dia: Pipeline meteorológico autônomo
+
+**O que fizemos:** O sistema de processamento passou a operar de forma independente, sem depender de outros módulos durante a execução.
+
+**Por que fizemos:** Reduzir pontos de falha e simplificar a arquitetura, permitindo que o processamento rode mesmo quando outros serviços estão indisponíveis.
+```

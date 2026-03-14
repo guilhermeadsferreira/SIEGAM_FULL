@@ -44,6 +44,11 @@ class TemperatureAnalyzer:
                 min_temp_c = tmin_c
                 min_payload = (seconds, values)
 
+        # TODO: aplicar threshold mensal por polígono antes de emitir os alertas de
+        # temperatura — atualmente todo polígono gera alerta independentemente do valor.
+        # HumidityAnalyzer e WindAnalyzer já fazem essa filtragem; temperatura precisa
+        # do mesmo tratamento. Decisão pendente: config.csv local no ETL ou tabela no banco?
+        # Ref: documentacao/tasks.md [CRÍTICO] — TemperatureAnalyzer não aplica threshold
         alerts: Dict[str, Alert] = {}
         if max_payload:
             sec, vals = max_payload

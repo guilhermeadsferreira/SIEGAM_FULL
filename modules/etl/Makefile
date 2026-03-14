@@ -1,4 +1,4 @@
-.PHONY: up run-once down logs worker beat worker-beat worker-docker beat-docker
+.PHONY: up run-once down logs verify-db worker beat worker-beat worker-docker beat-docker
 
 ## Sobe os containers (build + up)
 up:
@@ -15,6 +15,10 @@ down:
 ## Mostra logs do worker (opcional, útil em debug)
 logs:
 	docker compose logs -f celery_worker
+
+## Verifica se Postgres está acessível e tabela application_logs existe
+verify-db:
+	docker compose exec celery_worker uv run python scripts/verify_db.py
 
 ## Roda Celery Worker localmente
 worker:

@@ -17,6 +17,11 @@ class Settings(BaseSettings):
     CELERY_MAX_RETRIES: int = Field(3)
     REDIS_URL: str = Field("redis://localhost:6380/0")
 
+    DATABASE_URL: str = Field(
+        ...,
+        description="PostgreSQL connection URL (ex: postgresql://etl:etl@localhost:5433/etl)",
+    )
+
     HTTP_TIMEOUT: float = Field(30.0)
 
     METEOGRAM_BASE_URL: str = Field(...)

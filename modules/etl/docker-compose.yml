@@ -6,12 +6,35 @@ services:
     networks:
       - backend
 
+  postgres:
+    image: postgres:16-alpine
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_USER: etl
+      POSTGRES_PASSWORD: etl
+      POSTGRES_DB: etl
+    volumes:
+      - postgres_etl_data:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d:ro
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U etl -d etl"]
+      interval: 3s
+      timeout: 3s
+      retries: 5
+
   celery_worker:
     build: .
     depends_on:
-      - redis
+      redis:
+        condition: service_started
+      postgres:
+        condition: service_healthy
     environment:
       - REDIS_URL=redis://redis:6379/0
+      - DATABASE_URL=postgresql://etl:etl@postgres:5432/etl
     command: uv run celery --app main worker --beat --loglevel=info
     networks:
       - backend
@@ -22,3 +45,6 @@ services:
 networks:
   backend:
     driver: bridge
+
+volumes:
+  postgres_etl_data:
