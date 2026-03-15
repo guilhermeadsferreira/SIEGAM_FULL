@@ -1,0 +1,52 @@
+# Executar a partir da raiz do projeto: docker compose -f modules/notifications/docker-compose.yml up
+# Requer que db (sigedam) e redis estejam disponíveis na rede sigedam-net.
+# Para desenvolvimento local, use: docker compose --profile full up (inclui db e redis).
+
+services:
+  notifications:
+    build: .
+    environment:
+      - DATABASE_URL=postgresql://cempa:cempa@db:5432/sigedam
+      - REDIS_URL=redis://redis:6379/0
+      - SMTP_HOST=smtp.gmail.com
+      - SMTP_PORT=587
+      - SMTP_EMAIL=${SMTP_EMAIL:-}
+      - SMTP_PASSWORD=${SMTP_PASSWORD:-}
+      - WHATSAPP_INSTANCE=${WHATSAPP_INSTANCE:-}
+      - WHATSAPP_TOKEN=${WHATSAPP_TOKEN:-}
+      - WHATSAPP_CLIENT_TOKEN=${WHATSAPP_CLIENT_TOKEN:-}
+      - FRONTEND_URL=${FRONTEND_URL:-http://localhost:8080}
+    depends_on:
+      - db
+      - redis
+    networks:
+      - sigedam-net
+
+  db:
+    image: postgres:16-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: cempa
+      POSTGRES_PASSWORD: cempa
+      POSTGRES_DB: sigedam
+    volumes:
+      - ../../init-db:/docker-entrypoint-initdb.d:ro
+    networks:
+      - sigedam-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cempa -d sigedam"]
+      interval: 3s
+      timeout: 3s
+      retries: 5
+
+  redis:
+    image: redis:8-alpine
+    ports:
+      - 6379:6379
+    networks:
+      - sigedam-net
+
+networks:
+  sigedam-net:
+    driver: bridge

@@ -10,6 +10,7 @@ from domain.exceptions import NonRetryableException
 from domain.value_objects import Date
 from infra.database import find_all_cidades, find_all_eventos, insert_avisos
 from infra.logger import JsonLogger
+from infra.temperature_config import TemperatureConfig
 
 
 def _normalize(name: str) -> str:
@@ -28,14 +29,18 @@ class LoadResult:
     avisos_inserted: int
     unmatched_polygons: list[str]
     unmatched_events: list[str]
+    dispatch_alerts: list[dict]  # Lista de alertas com aviso_id para o módulo de notificações
 
 
 class LoadService:
 
-    def __init__(self, logger: JsonLogger):
+    def __init__(self, logger: JsonLogger, temperature_config: TemperatureConfig | None = None):
         self._logger = logger
+        self._temperature_config = temperature_config or TemperatureConfig()
         self._evento_map: dict[str, str] = {}  # nome_evento → UUID str
         self._cidade_map: dict[str, str] = {}  # nome_normalizado → UUID str
+        self._cidade_id_to_nome: dict[str, str] = {}  # id → nome (para dispatch)
+        self._evento_id_to_nome: dict[str, str] = {}  # id → nome_evento (para dispatch)
 
     def _build_catalogs(self) -> None:
         """
@@ -48,6 +53,7 @@ class LoadService:
                 "Tabela 'eventos' está vazia — execute o seed antes de rodar o ETL."
             )
         self._evento_map = {e["nome_evento"]: e["id"] for e in eventos}
+        self._evento_id_to_nome = {e["id"]: e["nome_evento"] for e in eventos}
 
         cidades = find_all_cidades()
         if not cidades:
@@ -55,6 +61,7 @@ class LoadService:
                 "Tabela 'cidades' está vazia — execute o seed antes de rodar o ETL."
             )
         self._cidade_map = {_normalize(c["nome"]): c["id"] for c in cidades}
+        self._cidade_id_to_nome = {c["id"]: c["nome"] for c in cidades}
 
         self._logger.info(
             "Catálogos carregados",
@@ -65,9 +72,16 @@ class LoadService:
     def _resolve_cidade(self, polygon_name: str) -> str | None:
         """
         Resolve polygon_name do CEMPA para o UUID da cidade no banco ETL.
-        A normalização remove acentos e caixa, tornando o match robusto.
+        Tenta match direto primeiro; se falhar, usa config.csv para mapear
+        polygon_name_meteogram -> display_name e busca por display_name.
         """
-        return self._cidade_map.get(_normalize(polygon_name))
+        key = _normalize(polygon_name)
+        if key in self._cidade_map:
+            return self._cidade_map[key]
+        display_name = self._temperature_config.get_display_name(polygon_name)
+        if display_name:
+            return self._cidade_map.get(_normalize(display_name))
+        return None
 
     def _resolve_evento(self, alert_type: str) -> str | None:
         """
@@ -110,6 +124,8 @@ class LoadService:
         unmatched_polygons: list[str] = []
         unmatched_events: list[str] = []
 
+        avisos_meta: list[tuple[str, str]] = []  # (polygon_name, alert_type) por aviso
+
         for polygon_name, alerts_by_type in analyze_results.items():
             id_cidade = self._resolve_cidade(polygon_name)
             if not id_cidade:
@@ -133,8 +149,34 @@ class LoadService:
 
                 aviso = self._build_aviso(alert, id_evento, id_cidade, today)
                 avisos_to_insert.append(aviso)
+                avisos_meta.append((polygon_name, alert_type))
 
-        inserted = insert_avisos(avisos_to_insert)
+        inserted_ids = insert_avisos(avisos_to_insert)
+        inserted = len(inserted_ids)
+
+        # Monta payload para o módulo de notificações (com aviso_id, id_cidade, id_evento, etc.)
+        dispatch_alerts: list[dict] = []
+        for i, aviso in enumerate(avisos_to_insert):
+            polygon_name, alert_type = avisos_meta[i]
+            aviso_id = inserted_ids[i] if i < len(inserted_ids) else None
+            if not aviso_id:
+                continue
+            nome_cidade = self._cidade_id_to_nome.get(aviso["id_cidade"], polygon_name)
+            nome_evento = self._evento_id_to_nome.get(aviso["id_evento"], alert_type)
+            horario = aviso.get("horario")
+            # Formato HH:MM:00 para compatibilidade com o módulo de notificações
+            horario_str = f"{horario}:00" if horario and len(str(horario)) == 5 else str(horario) if horario else None
+            dispatch_alerts.append({
+                "aviso_id": aviso_id,
+                "id_cidade": aviso["id_cidade"],
+                "id_evento": aviso["id_evento"],
+                "nome_cidade": nome_cidade,
+                "nome_evento": nome_evento,
+                "valor": float(aviso["valor"]),
+                "unidade_medida": aviso["unidade_medida"],
+                "horario": horario_str,
+                "data_referencia": str(aviso["data_referencia"]),
+            })
 
         self._logger.info(
             "Avisos persistidos",
@@ -149,6 +191,7 @@ class LoadService:
             avisos_inserted=inserted,
             unmatched_polygons=unmatched_polygons,
             unmatched_events=list(set(unmatched_events)),
+            dispatch_alerts=dispatch_alerts,
         )
 
 

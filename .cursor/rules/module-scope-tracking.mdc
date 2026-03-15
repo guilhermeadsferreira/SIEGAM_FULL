@@ -1,0 +1,42 @@
+---
+description: Documenta mudanças de escopo, papel e responsabilidades de módulos
+globs: modules/**/*.py
+alwaysApply: false
+---
+
+# Rastreamento de Escopo de Módulos
+
+Sempre que uma alteração modificar o **escopo, papel ou responsabilidades** de um módulo dentro de `modules/`, atualize o arquivo `MODULE.md` na raiz do módulo afetado.
+
+## Quando atualizar
+
+- Adição ou remoção de responsabilidades do módulo
+- Mudança no fluxo principal de execução
+- Alteração de regras de negócio (thresholds, validações, filtros)
+- Novo ponto de integração com sistemas externos ou outros módulos
+- Mudança nas entidades ou conceitos de domínio
+
+## Onde atualizar
+
+O arquivo `MODULE.md` fica na raiz de cada módulo:
+
+```
+modules/<nome_do_modulo>/MODULE.md
+```
+
+## O que atualizar
+
+Atualize **apenas as seções afetadas** pela mudança. As seções do `MODULE.md` são:
+
+1. **Papel** — o que o módulo faz em uma frase
+2. **Responsabilidades** — lista das responsabilidades do módulo
+3. **Fluxo** — sequência de execução e integração entre etapas
+4. **Regras de Negócio** — thresholds, validações e lógica de domínio
+5. **Integrações** — sistemas externos e módulos com os quais se comunica
+
+## Exemplo de atualização
+
+Se um novo analisador meteorológico for adicionado ao ETL:
+
+- Atualize a seção **Regras de Negócio** com o novo threshold
+- Atualize **Responsabilidades** se o escopo do módulo expandiu

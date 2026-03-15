@@ -196,7 +196,7 @@ def load(self, analyze_output: dict, execution_id=None):
             )
 
             dispatch.delay(
-                alerts=results,
+                alerts=load_result.dispatch_alerts,
                 avisos_count=load_result.avisos_inserted,
                 execution_id=execution_id,
             )
