@@ -27,14 +27,26 @@ class RainAnalyzer:
         records_processed = 0
         records_valid = 0
 
-        for seconds, values in polygon_data.items():
+        # PRECmax é acumulativa no dado fonte — o valor em T representa o total
+        # acumulado desde o início da série, não uma taxa instantânea.
+        # Para obter a chuva horária efetiva, calcula-se a diferença entre T e
+        # T-2 (dois passos de 30 min = 1 hora), conforme resolução temporal dos
+        # dados e a análise horária realizada.
+        sorted_steps = sorted(polygon_data.items(), key=lambda x: x[0])
+
+        for i, (seconds, values) in enumerate(sorted_steps):
             records_processed += 1
-            rain = values.get("PRECmax")
-            if rain is None:
+            if i < 2:
+                continue  # sem T-2 disponível
+
+            prec_now = values.get("PRECmax")
+            prec_t2 = sorted_steps[i - 2][1].get("PRECmax")
+            if prec_now is None or prec_t2 is None:
                 continue
 
             records_valid += 1
-            rain_val = RainRateMmPerHour(float(rain)).value
+            delta = max(0.0, float(prec_now) - float(prec_t2))
+            rain_val = RainRateMmPerHour(delta).value
             if rain_val > max_rain:
                 max_rain = rain_val
                 max_payload = (seconds, values, rain_val)

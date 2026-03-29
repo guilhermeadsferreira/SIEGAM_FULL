@@ -16,7 +16,7 @@ services:
       POSTGRES_DB: etl
     volumes:
       - postgres_etl_data:/var/lib/postgresql/data
-      - ./init-db:/docker-entrypoint-initdb.d:ro
+      - ../init-db:/docker-entrypoint-initdb.d:ro
     networks:
       - backend
     healthcheck:

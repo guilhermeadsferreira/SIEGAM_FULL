@@ -33,7 +33,7 @@ def insert_batch(avisos: list[dict]) -> list[str]:
             Decimal(str(a["diferenca"])),
             a["unidade_medida"],
             date.fromisoformat(a["data_geracao"]),
-            date.fromisoformat(a["data_referencia"]),
+            date.fromisoformat(a["data_referencia"][:10]),
             time.fromisoformat(a["horario"]) if a.get("horario") else None,
             Decimal(str(a["segundos"])) if a.get("segundos") is not None else None,
         )

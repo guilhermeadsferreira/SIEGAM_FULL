@@ -31,6 +31,14 @@ class FilterService:
         valor = alerta.valor
         personalizavel = usuario.personalizavel
         valor_preferencia = usuario.valor
+        self._logger.info(
+            "[DEBUG FILTER]",
+            tipo=tipo,
+            valor=valor,
+            personalizavel=personalizavel,
+            valor_preferencia=valor_preferencia,
+            user_id=usuario.id,
+        )
 
         # Eventos sem nível (chuva, temp alta, temp baixa): sempre envia (ETL já filtrou temp)
         if tipo in ("chuva", "temperatura alta", "temperatura baixa"):

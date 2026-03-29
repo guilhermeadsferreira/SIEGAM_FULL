@@ -1,0 +1,77 @@
+# Stack completa: db + redis + ETL worker + Notifications consumer
+# Executar a partir de modules/: docker compose up --build -d
+#
+# Variáveis de ambiente: copiar .env.example → .env e preencher.
+# DATABASE_URL e REDIS_URL são injetados via service name — não incluir no .env.
+
+services:
+
+  db:
+    image: postgres:16-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: cempa
+      POSTGRES_PASSWORD: cempa
+      POSTGRES_DB: sigedam
+    volumes:
+      - sigedam_data:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d:ro
+    networks:
+      - sigedam-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cempa -d sigedam"]
+      interval: 3s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:8-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - sigedam-net
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 5
+
+  celery_worker:
+    build: ./etl
+    depends_on:
+      redis:
+        condition: service_healthy
+      db:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - DATABASE_URL=postgresql://cempa:cempa@db:5432/sigedam
+    command: uv run celery --app main worker --loglevel=info
+    networks:
+      - sigedam-net
+    volumes:
+      - ./etl/tmp:/app/tmp
+      - ./etl/logs:/app/logs
+
+  notifications:
+    build: ./notifications
+    depends_on:
+      redis:
+        condition: service_healthy
+      db:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      - DATABASE_URL=postgresql://cempa:cempa@db:5432/sigedam
+      - REDIS_URL=redis://redis:6379/0
+    networks:
+      - sigedam-net
+
+networks:
+  sigedam-net:
+    driver: bridge
+
+volumes:
+  sigedam_data:

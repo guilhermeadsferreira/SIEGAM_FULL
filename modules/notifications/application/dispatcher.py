@@ -59,6 +59,15 @@ class DispatcherService:
         cidades_alertas = self._formatar_alertas_por_cidade(alertas)
         canais = self._get_canais_from_usuario(usuario)
 
+        self._logger.info(
+            "[DEBUG DISPATCH] iniciando dispatch",
+            user_id=usuario.id,
+            canais=canais,
+            whatsapp=usuario.whatsapp,
+            email=usuario.email,
+            total_alertas=len(alertas),
+        )
+
         for canal_info in canais:
             canal_nome = (canal_info.get("nomeCanal") or canal_info.get("nome_canal") or "").lower()
             canal_id = canal_info.get("id") or self._get_canal_id(canal_nome)
@@ -82,8 +91,10 @@ class DispatcherService:
                     "email": usuario.email,
                     "whatsapp": usuario.whatsapp,
                 }]
+                self._logger.info("[DEBUG DISPATCH] tentando envio", canal=canal_nome, user_id=usuario.id)
                 success = sender.send(destinatarios, conteudo)
                 status_name = "Sucesso" if success else "Falha"
+                self._logger.info("[DEBUG DISPATCH] envio concluído", canal=canal_nome, user_id=usuario.id, success=success)
             except Exception as e:
                 self._logger.exception("Erro ao enviar notificação", canal=canal_nome, error=str(e))
                 status_name = "Falha"

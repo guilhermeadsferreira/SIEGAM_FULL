@@ -10,14 +10,18 @@ from settings import settings
 
 
 def format_data_pt_br(data_str: str) -> str:
-    """Converte YYYY-MM-DD para DD/MM/YYYY (pt-BR)."""
+    """Converte YYYY-MM-DD ou YYYY-MM-DD HH:MM:SS para DD/MM/YYYY ou DD/MM/YYYY HH:MM:SS (pt-BR)."""
     try:
         if not data_str:
             return "N/A"
-        if isinstance(data_str, str) and len(data_str) == 10:
-            data_obj = datetime.strptime(data_str, "%Y-%m-%d")
+        s = str(data_str)
+        if len(s) >= 19:
+            data_obj = datetime.strptime(s[:19], "%Y-%m-%d %H:%M:%S")
+            return data_obj.strftime("%d/%m/%Y %H:%M:%S")
+        if len(s) == 10:
+            data_obj = datetime.strptime(s, "%Y-%m-%d")
             return data_obj.strftime("%d/%m/%Y")
-        return str(data_str)
+        return s
     except (ValueError, AttributeError):
         return str(data_str)
 

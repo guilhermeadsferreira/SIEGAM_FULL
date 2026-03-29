@@ -196,9 +196,10 @@ class LoadService:
 
 
 def _seconds_to_time(seconds: float | None) -> str | None:
-    """Converte segundos do dia (ex: 39600) para 'HH:MM'."""
+    """Converte segundos (ex: 39600 ou 90000) para 'HH:MM', normalizando para o dia."""
     if seconds is None:
         return None
-    h = int(seconds) // 3600
-    m = (int(seconds) % 3600) // 60
+    total = int(seconds) % 86400
+    h = total // 3600
+    m = (total % 3600) // 60
     return f"{h:02d}:{m:02d}"

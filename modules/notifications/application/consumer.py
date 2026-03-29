@@ -30,7 +30,15 @@ class NotificationConsumer:
         users_alerts = self._resolver.resolve(payload.alerts)
 
         for uid, data in list(users_alerts.items()):
+            before = len(data["alertas"])
             data["alertas"] = self._filter.apply(data["alertas"], data["usuario"])
+            after = len(data["alertas"])
+            self._logger.info(
+                "[DEBUG CONSUMER] filtro aplicado",
+                user_id=uid,
+                alertas_antes=before,
+                alertas_depois=after,
+            )
 
         users_alerts = {k: v for k, v in users_alerts.items() if v["alertas"]}
 

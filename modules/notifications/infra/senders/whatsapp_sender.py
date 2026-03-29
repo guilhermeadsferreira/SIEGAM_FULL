@@ -9,7 +9,10 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 
 from domain.exceptions import WhatsAppApiException
 from domain.value_objects import PhoneNumber
+from infra.logger import get_logger
 from settings import settings
+
+_logger = get_logger("notifications.whatsapp_sender")
 
 
 class WhatsAppSender:
@@ -33,10 +36,13 @@ class WhatsAppSender:
         for user in destinatarios:
             phone = user.get("whatsapp") or user.get("telefone")
             if not phone:
+                _logger.warning("[DEBUG WA] usuário sem número whatsapp", user_id=user.get("id"))
                 continue
             normalized = PhoneNumber(phone).normalized
             if not normalized:
+                _logger.warning("[DEBUG WA] número inválido", user_id=user.get("id"), phone=phone)
                 continue
+            _logger.info("[DEBUG WA] enviando mensagem", user_id=user.get("id"), phone=normalized)
             if not self._send_one(normalized, conteudo):
                 all_ok = False
         return all_ok
@@ -53,6 +59,7 @@ class WhatsAppSender:
                 json={"phone": phone, "message": message},
                 headers=self._headers,
             )
+            _logger.info("[DEBUG WA] resposta Z-API", status=resp.status_code, body=resp.text[:500])
             if resp.status_code != 200:
                 raise WhatsAppApiException(
                     f"Z-API retornou {resp.status_code}: {resp.text}"
